@@ -1,5 +1,5 @@
 # hospital_management
-shri ganesh eye hospital - sarthi (v.06)
+Yogesh Jha: shri ganesh eye hospital - sarthi (v.06)
 
 ## Discription of SARTHI V.06 Bita version
 
@@ -21,32 +21,32 @@ hospitals to manage patient records and provide timely and effective care.
 * Form1 - it is used as a welcome screen for the user ( Act as a platform to all other windows without intent new window every time)
 * User - this page is to add basic details to the AZURE database which can be fetch during application form, discharge form and etc without using same content again.
 * Application - this is the form wher patient was first admited to the hospital, this data is being stored in "Application table"
-    ** Save - to save application to "Application table" in Azure Database
-    ** Print - to print application application in pdf format
-    ** reset - to clear screen while relode
+    - Save - to save application to "Application table" in Azure Database
+    - Print - to print application application in pdf format
+    - reset - to clear screen while relode
 * OT - this menu can be used at the  time of filling application for operation 
-    ** Save - to save OT application to "ot table" in Azure Database
-    ** Print - to print application in pdf format
-    ** reset - to clear screen while relode
+    - Save - to save OT application to "ot table" in Azure Database
+    - Print - to print application in pdf format
+    - reset - to clear screen while relode
 * Discharge - this form can be used to discharge and make the patient an ImPatient of the concern hospital
-    ** Save - to save discharge application to "Discharge table" in Azure Database
-    ** Print - to print application in pdf format
-    ** reset - to clear screen while relode
+    - Save - to save discharge application to "Discharge table" in Azure Database
+    - Print - to print application in pdf format
+    - reset - to clear screen while relode
 * Concent - this menu has two main fetures one is Concent form and second one is decleration that is required before operation
-    ** Concent - to auto genrate data of concent
-    ** Decleration - to auto genrate data of declearation
+    - Concent - to auto genrate data of concent
+    - Decleration - to auto genrate data of declearation
 * Search - this page is utlizes to find all the patient with respct to its patent id
-    ** Find - user with respect patent id i.e. MRD
+    - Find - user with respect patent id i.e. MRD
 * Help - it has basic information and version of application
 
 
 ## Database Azure
 * Database Name: ganesh
 * Table
-  ** User - to Add patient data (MRD is PK)
-  ** Application - to save application data (MRD is FK)
-  ** OT - to save OT application data (MRD is FK)
-  ** Discharge - to save Discharge application data (MRD is FK)
+  - User - to Add patient data (MRD is PK)
+  - Application - to save application data (MRD is FK)
+  - OT - to save OT application data (MRD is FK)
+  - Discharge - to save Discharge application data (MRD is FK)
 
 
 
