@@ -43,6 +43,42 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AWSSDK.Core.dll" size="1910432">
+      <assemblyIdentity name="AWSSDK.Core" version="3.3.0.0" publicKeyToken="885C28607F98E604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HjFMejAQAM1o0gwpZiV/TxJe5MWvcf8eJ5HGlJ/Cdgg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AWSSDK.RDS.dll" size="922784">
+      <assemblyIdentity name="AWSSDK.RDS" version="3.3.0.0" publicKeyToken="885C28607F98E604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GoTBpNNAEICF+PkzNOcyzPNlSYd65KHeSDhCIK1TNCc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AWSSDK.RDSDataService.dll" size="77472">
+      <assemblyIdentity name="AWSSDK.RDSDataService" version="3.3.0.0" publicKeyToken="885C28607F98E604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NXbd2gvR5v20XDWKBmmZuykoSfvmGXHZ83qcwb0mcdE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FireSharp.dll" size="40960">
       <assemblyIdentity name="FireSharp" version="2.0.3.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -139,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sarthi.exe" size="2292200">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sarthi.exe" size="2434536">
       <assemblyIdentity name="sarthi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8mUTDfC6Na46zWQccpEkFnWNabBt8yKzICUvwpENY6g=</dsig:DigestValue>
+        <dsig:DigestValue>vbUTUZos4DqpUzIFD6v8rVFVHFoiGEd1ypC0a4bE83Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

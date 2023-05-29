@@ -51,7 +51,6 @@
             System.Windows.Forms.Label label19;
             System.Windows.Forms.Label label20;
             System.Windows.Forms.Label label21;
-            System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label23;
             System.Windows.Forms.Label label24;
             System.Windows.Forms.Label label25;
@@ -66,11 +65,20 @@
             System.Windows.Forms.Label label34;
             System.Windows.Forms.Label label35;
             System.Windows.Forms.Label label36;
+            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label37;
             System.Windows.Forms.Label label38;
+            System.Windows.Forms.Label label39;
+            System.Windows.Forms.Label label40;
+            System.Windows.Forms.Label label41;
+            System.Windows.Forms.Label label42;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(application));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.search = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.mrd = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.TextBox();
@@ -78,49 +86,57 @@
             this.age = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
             this.sex = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.add_bt = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.add_bt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.medicalhistory = new System.Windows.Forms.TextBox();
+            this.medicalHistory = new System.Windows.Forms.TextBox();
             this.bcva = new System.Windows.Forms.TextBox();
             this.remark = new System.Windows.Forms.TextBox();
             this.vn = new System.Windows.Forms.TextBox();
             this.bp = new System.Windows.Forms.TextBox();
             this.pr = new System.Windows.Forms.TextBox();
             this.temp = new System.Windows.Forms.TextBox();
-            this.pasthistory = new System.Windows.Forms.TextBox();
-            this.complains = new System.Windows.Forms.TextBox();
+            this.pastHistory = new System.Windows.Forms.TextBox();
+            this.compliance = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chemicalno = new System.Windows.Forms.CheckBox();
+            this.chemicalyes = new System.Windows.Forms.CheckBox();
+            this.outpatient = new System.Windows.Forms.CheckBox();
+            this.inpatient = new System.Windows.Forms.CheckBox();
+            this.insuranceno = new System.Windows.Forms.CheckBox();
+            this.insuranceyes = new System.Windows.Forms.CheckBox();
+            this.latexno = new System.Windows.Forms.CheckBox();
+            this.latexyes = new System.Windows.Forms.CheckBox();
+            this.insectno = new System.Windows.Forms.CheckBox();
+            this.insectyes = new System.Windows.Forms.CheckBox();
+            this.envno = new System.Windows.Forms.CheckBox();
+            this.envyes = new System.Windows.Forms.CheckBox();
+            this.medicationno = new System.Windows.Forms.CheckBox();
+            this.medicationyes = new System.Windows.Forms.CheckBox();
+            this.foodno = new System.Windows.Forms.CheckBox();
+            this.foodyes = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.treatment = new System.Windows.Forms.TextBox();
             this.diagnosis = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.iop = new System.Windows.Forms.TextBox();
-            this.iol = new System.Windows.Forms.TextBox();
-            this.rbs = new System.Windows.Forms.TextBox();
-            this.syringing = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.colonoscopy = new System.Windows.Forms.TextBox();
+            this.pulmonary = new System.Windows.Forms.TextBox();
+            this.urine_test = new System.Windows.Forms.TextBox();
+            this.ecg = new System.Windows.Forms.TextBox();
+            this.bloot_test = new System.Windows.Forms.TextBox();
+            this.imaging = new System.Windows.Forms.TextBox();
+            this.outpatientrecord = new System.Windows.Forms.GroupBox();
+            this.state = new System.Windows.Forms.TextBox();
+            this.city = new System.Windows.Forms.TextBox();
+            this.district = new System.Windows.Forms.TextBox();
+            this.pin = new System.Windows.Forms.TextBox();
+            this.hospital_name = new System.Windows.Forms.TextBox();
+            this.hospital_address = new System.Windows.Forms.TextBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
@@ -147,7 +163,6 @@
             label19 = new System.Windows.Forms.Label();
             label20 = new System.Windows.Forms.Label();
             label21 = new System.Windows.Forms.Label();
-            label22 = new System.Windows.Forms.Label();
             label23 = new System.Windows.Forms.Label();
             label24 = new System.Windows.Forms.Label();
             label25 = new System.Windows.Forms.Label();
@@ -162,8 +177,16 @@
             label34 = new System.Windows.Forms.Label();
             label35 = new System.Windows.Forms.Label();
             label36 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label22 = new System.Windows.Forms.Label();
             label37 = new System.Windows.Forms.Label();
             label38 = new System.Windows.Forms.Label();
+            label39 = new System.Windows.Forms.Label();
+            label40 = new System.Windows.Forms.Label();
+            label41 = new System.Windows.Forms.Label();
+            label42 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -173,7 +196,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.outpatientrecord.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrdLabel
@@ -274,7 +297,7 @@
             label8.Name = "label8";
             label8.Size = new System.Drawing.Size(127, 23);
             label8.TabIndex = 25;
-            label8.Text = "Medical History";
+            label8.Text = "Medical Record";
             // 
             // label9
             // 
@@ -342,9 +365,9 @@
             label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label15.Location = new System.Drawing.Point(17, 63);
             label15.Name = "label15";
-            label15.Size = new System.Drawing.Size(180, 23);
+            label15.Size = new System.Drawing.Size(74, 23);
             label15.TabIndex = 38;
-            label15.Text = "Slit Lamp Examination";
+            label15.Text = "Allergies";
             // 
             // label16
             // 
@@ -352,9 +375,9 @@
             label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label16.Location = new System.Drawing.Point(17, 99);
             label16.Name = "label16";
-            label16.Size = new System.Drawing.Size(54, 23);
+            label16.Size = new System.Drawing.Size(115, 23);
             label16.TabIndex = 39;
-            label16.Text = "Eyelid";
+            label16.Text = "Food allergies";
             // 
             // label17
             // 
@@ -362,9 +385,9 @@
             label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label17.Location = new System.Drawing.Point(313, 63);
             label17.Name = "label17";
-            label17.Size = new System.Drawing.Size(83, 23);
+            label17.Size = new System.Drawing.Size(89, 23);
             label17.TabIndex = 41;
-            label17.Text = "Right Eye";
+            label17.Text = "Applicable";
             // 
             // label18
             // 
@@ -372,9 +395,9 @@
             label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label18.Location = new System.Drawing.Point(422, 63);
             label18.Name = "label18";
-            label18.Size = new System.Drawing.Size(71, 23);
+            label18.Size = new System.Drawing.Size(121, 23);
             label18.TabIndex = 43;
-            label18.Text = "Left Eye";
+            label18.Text = "Not applicable";
             // 
             // label19
             // 
@@ -382,9 +405,9 @@
             label19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label19.Location = new System.Drawing.Point(17, 122);
             label19.Name = "label19";
-            label19.Size = new System.Drawing.Size(152, 23);
+            label19.Size = new System.Drawing.Size(162, 23);
             label19.TabIndex = 44;
-            label19.Text = "Conjunctiva/Sclera";
+            label19.Text = "Medication allergies";
             // 
             // label20
             // 
@@ -392,9 +415,9 @@
             label20.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label20.Location = new System.Drawing.Point(17, 168);
             label20.Name = "label20";
-            label20.Size = new System.Drawing.Size(77, 23);
+            label20.Size = new System.Drawing.Size(122, 23);
             label20.TabIndex = 50;
-            label20.Text = "Iris/Pupil";
+            label20.Text = "Insect allergies";
             // 
             // label21
             // 
@@ -402,39 +425,29 @@
             label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label21.Location = new System.Drawing.Point(17, 145);
             label21.Name = "label21";
-            label21.Size = new System.Drawing.Size(65, 23);
+            label21.Size = new System.Drawing.Size(187, 23);
             label21.TabIndex = 47;
-            label21.Text = "Cornea";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label22.Location = new System.Drawing.Point(17, 317);
-            label22.Name = "label22";
-            label22.Size = new System.Drawing.Size(139, 23);
-            label22.TabIndex = 62;
-            label22.Text = "Peripheral Retina";
+            label21.Text = "Environmental allergies";
             // 
             // label23
             // 
             label23.AutoSize = true;
             label23.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label23.Location = new System.Drawing.Point(17, 294);
+            label23.Location = new System.Drawing.Point(17, 321);
             label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(65, 23);
+            label23.Size = new System.Drawing.Size(79, 23);
             label23.TabIndex = 59;
-            label23.Text = "Macula";
+            label23.Text = "Inpatient";
             // 
             // label24
             // 
             label24.AutoSize = true;
             label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label24.Location = new System.Drawing.Point(17, 271);
+            label24.Location = new System.Drawing.Point(17, 298);
             label24.Name = "label24";
-            label24.Size = new System.Drawing.Size(87, 23);
+            label24.Size = new System.Drawing.Size(84, 23);
             label24.TabIndex = 56;
-            label24.Text = "Optic Disc";
+            label24.Text = "Insurance";
             // 
             // label25
             // 
@@ -442,39 +455,39 @@
             label25.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label25.Location = new System.Drawing.Point(17, 191);
             label25.Name = "label25";
-            label25.Size = new System.Drawing.Size(44, 23);
+            label25.Size = new System.Drawing.Size(105, 23);
             label25.TabIndex = 53;
-            label25.Text = "Lens";
+            label25.Text = "Latex allergy";
             // 
             // label26
             // 
             label26.AutoSize = true;
             label26.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label26.Location = new System.Drawing.Point(422, 234);
+            label26.Location = new System.Drawing.Point(422, 261);
             label26.Name = "label26";
-            label26.Size = new System.Drawing.Size(71, 23);
+            label26.Size = new System.Drawing.Size(121, 23);
             label26.TabIndex = 67;
-            label26.Text = "Left Eye";
+            label26.Text = "Not applicable";
             // 
             // label27
             // 
             label27.AutoSize = true;
             label27.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label27.Location = new System.Drawing.Point(313, 234);
+            label27.Location = new System.Drawing.Point(313, 261);
             label27.Name = "label27";
-            label27.Size = new System.Drawing.Size(83, 23);
+            label27.Size = new System.Drawing.Size(89, 23);
             label27.TabIndex = 66;
-            label27.Text = "Right Eye";
+            label27.Text = "Applicable";
             // 
             // label28
             // 
             label28.AutoSize = true;
             label28.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label28.Location = new System.Drawing.Point(17, 234);
+            label28.Location = new System.Drawing.Point(17, 261);
             label28.Name = "label28";
-            label28.Size = new System.Drawing.Size(166, 23);
+            label28.Size = new System.Drawing.Size(54, 23);
             label28.TabIndex = 65;
-            label28.Text = "Fundus Examination";
+            label28.Text = "Detail";
             // 
             // label29
             // 
@@ -502,86 +515,166 @@
             label31.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label31.Location = new System.Drawing.Point(206, 18);
             label31.Name = "label31";
-            label31.Size = new System.Drawing.Size(147, 28);
+            label31.Size = new System.Drawing.Size(154, 28);
             label31.TabIndex = 68;
-            label31.Text = "Allergy History";
+            label31.Text = "Medical History";
             label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // label32
             // 
             label32.AutoSize = true;
             label32.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label32.Location = new System.Drawing.Point(408, 68);
+            label32.Location = new System.Drawing.Point(319, 76);
             label32.Name = "label32";
-            label32.Size = new System.Drawing.Size(81, 23);
+            label32.Size = new System.Drawing.Size(113, 23);
             label32.TabIndex = 45;
-            label32.Text = "Syringing";
+            label32.Text = "Imaging tests";
             // 
             // label33
             // 
             label33.AutoSize = true;
             label33.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label33.Location = new System.Drawing.Point(41, 68);
+            label33.Location = new System.Drawing.Point(43, 76);
             label33.Name = "label33";
-            label33.Size = new System.Drawing.Size(39, 23);
+            label33.Size = new System.Drawing.Size(94, 23);
             label33.TabIndex = 44;
-            label33.Text = "RBS";
+            label33.Text = "Blood tests";
             // 
             // label34
             // 
             label34.AutoSize = true;
             label34.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label34.Location = new System.Drawing.Point(617, 68);
+            label34.Location = new System.Drawing.Point(319, 116);
             label34.Name = "label34";
-            label34.Size = new System.Drawing.Size(172, 23);
+            label34.Size = new System.Drawing.Size(79, 23);
             label34.TabIndex = 49;
-            label34.Text = "Calculated IOL Power";
+            label34.Text = "EKG/ECG";
             // 
             // label35
             // 
             label35.AutoSize = true;
             label35.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label35.Location = new System.Drawing.Point(183, 68);
+            label35.Location = new System.Drawing.Point(43, 116);
             label35.Name = "label35";
-            label35.Size = new System.Drawing.Size(110, 23);
+            label35.Size = new System.Drawing.Size(91, 23);
             label35.TabIndex = 48;
-            label35.Text = "IOP (mm Hg)";
+            label35.Text = "Urine tests";
             // 
             // label36
             // 
             label36.AutoSize = true;
             label36.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label36.Location = new System.Drawing.Point(426, 18);
+            label36.Location = new System.Drawing.Point(426, 28);
             label36.Name = "label36";
             label36.Size = new System.Drawing.Size(116, 23);
             label36.TabIndex = 69;
             label36.Text = "Investigations";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(17, 214);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(147, 23);
+            label1.TabIndex = 71;
+            label1.Text = "Chemical allergies";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.Location = new System.Drawing.Point(644, 116);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(108, 23);
+            label2.TabIndex = 73;
+            label2.Text = "Colonoscopy";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Location = new System.Drawing.Point(644, 76);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(160, 23);
+            label3.TabIndex = 72;
+            label3.Text = "Pulmonary function";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label22.Location = new System.Drawing.Point(423, 18);
+            label22.Name = "label22";
+            label22.Size = new System.Drawing.Size(123, 23);
+            label22.TabIndex = 74;
+            label22.Text = "Patient Record";
+            // 
             // label37
             // 
             label37.AutoSize = true;
-            label37.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label37.Location = new System.Drawing.Point(823, 38);
+            label37.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label37.Location = new System.Drawing.Point(767, 109);
             label37.Name = "label37";
-            label37.Size = new System.Drawing.Size(83, 23);
-            label37.TabIndex = 70;
-            label37.Text = "Signature";
-            label37.Click += new System.EventHandler(this.label37_Click);
+            label37.Size = new System.Drawing.Size(48, 23);
+            label37.TabIndex = 86;
+            label37.Text = "State";
             // 
             // label38
             // 
             label38.AutoSize = true;
-            label38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label38.Location = new System.Drawing.Point(763, 15);
+            label38.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label38.Location = new System.Drawing.Point(342, 109);
             label38.Name = "label38";
-            label38.Size = new System.Drawing.Size(199, 23);
-            label38.TabIndex = 71;
-            label38.Text = "___________________________";
+            label38.Size = new System.Drawing.Size(39, 23);
+            label38.TabIndex = 85;
+            label38.Text = "City";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label39.Location = new System.Drawing.Point(558, 109);
+            label39.Name = "label39";
+            label39.Size = new System.Drawing.Size(34, 23);
+            label39.TabIndex = 82;
+            label39.Text = "Pin";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label40.Location = new System.Drawing.Point(42, 109);
+            label40.Name = "label40";
+            label40.Size = new System.Drawing.Size(63, 23);
+            label40.TabIndex = 81;
+            label40.Text = "District";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label41.Location = new System.Drawing.Point(464, 69);
+            label41.Name = "label41";
+            label41.Size = new System.Drawing.Size(70, 23);
+            label41.TabIndex = 80;
+            label41.Text = "Address";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label42.Location = new System.Drawing.Point(42, 69);
+            label42.Name = "label42";
+            label42.Size = new System.Drawing.Size(123, 23);
+            label42.TabIndex = 79;
+            label42.Text = "Hospital Name";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.search);
+            this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(mrdLabel);
@@ -596,23 +689,36 @@
             this.groupBox1.Controls.Add(sexLabel);
             this.groupBox1.Controls.Add(addressLabel);
             this.groupBox1.Controls.Add(this.sex);
-            this.groupBox1.Location = new System.Drawing.Point(12, 115);
+            this.groupBox1.Location = new System.Drawing.Point(11, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1004, 186);
+            this.groupBox1.Size = new System.Drawing.Size(1006, 186);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // search
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(795, 138);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 25);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
+            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.search.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.search.Image = global::sarthi.Properties.Resources.search1;
+            this.search.Location = new System.Drawing.Point(917, 96);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(33, 31);
+            this.search.TabIndex = 20;
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // date
+            // 
+            this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
+            this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.TabIndex = 7;
+            this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
             // label4
             // 
@@ -631,7 +737,7 @@
             this.mrd.Location = new System.Drawing.Point(795, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(155, 30);
+            this.mrd.Size = new System.Drawing.Size(116, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -644,6 +750,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(259, 30);
             this.name.TabIndex = 1;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // contact
             // 
@@ -694,61 +801,76 @@
             this.sex.Size = new System.Drawing.Size(108, 30);
             this.sex.TabIndex = 3;
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(281, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 31);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // add_bt
-            // 
-            this.add_bt.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.add_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_bt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_bt.Location = new System.Drawing.Point(606, 17);
-            this.add_bt.Name = "add_bt";
-            this.add_bt.Size = new System.Drawing.Size(114, 31);
-            this.add_bt.TabIndex = 41;
-            this.add_bt.Text = "Save";
-            this.add_bt.UseVisualStyleBackColor = true;
-            this.add_bt.Click += new System.EventHandler(this.add_bt_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.add_bt);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 856);
+            this.groupBox2.Location = new System.Drawing.Point(0, 1034);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1028, 54);
+            this.groupBox2.Size = new System.Drawing.Size(1106, 61);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(442, 17);
+            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::sarthi.Properties.Resources.printer;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(498, 17);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 31);
+            this.button2.Size = new System.Drawing.Size(114, 37);
             this.button2.TabIndex = 40;
-            this.button2.Text = "Print";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "  Print";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // add_bt
+            // 
+            this.add_bt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.add_bt.BackColor = System.Drawing.Color.RoyalBlue;
+            this.add_bt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_bt.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_bt.ForeColor = System.Drawing.Color.White;
+            this.add_bt.Image = global::sarthi.Properties.Resources.save;
+            this.add_bt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_bt.Location = new System.Drawing.Point(662, 17);
+            this.add_bt.Name = "add_bt";
+            this.add_bt.Size = new System.Drawing.Size(124, 37);
+            this.add_bt.TabIndex = 41;
+            this.add_bt.Text = "Save";
+            this.add_bt.UseVisualStyleBackColor = false;
+            this.add_bt.Click += new System.EventHandler(this.add_bt_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(333, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 37);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "    Refresh";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox3.Controls.Add(this.medicalhistory);
+            this.groupBox3.Controls.Add(this.medicalHistory);
             this.groupBox3.Controls.Add(label13);
             this.groupBox3.Controls.Add(this.bcva);
             this.groupBox3.Controls.Add(label14);
@@ -763,31 +885,31 @@
             this.groupBox3.Controls.Add(this.temp);
             this.groupBox3.Controls.Add(label8);
             this.groupBox3.Controls.Add(label7);
-            this.groupBox3.Controls.Add(this.pasthistory);
+            this.groupBox3.Controls.Add(this.pastHistory);
             this.groupBox3.Controls.Add(label6);
-            this.groupBox3.Controls.Add(this.complains);
-            this.groupBox3.Location = new System.Drawing.Point(12, 300);
+            this.groupBox3.Controls.Add(this.compliance);
+            this.groupBox3.Location = new System.Drawing.Point(11, 300);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(429, 257);
+            this.groupBox3.Size = new System.Drawing.Size(431, 257);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             // 
-            // medicalhistory
+            // medicalHistory
             // 
-            this.medicalhistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.medicalhistory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicalhistory.Location = new System.Drawing.Point(178, 97);
-            this.medicalhistory.MaxLength = 100;
-            this.medicalhistory.Name = "medicalhistory";
-            this.medicalhistory.Size = new System.Drawing.Size(239, 30);
-            this.medicalhistory.TabIndex = 10;
+            this.medicalHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.medicalHistory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medicalHistory.Location = new System.Drawing.Point(178, 97);
+            this.medicalHistory.MaxLength = 100;
+            this.medicalHistory.Name = "medicalHistory";
+            this.medicalHistory.Size = new System.Drawing.Size(239, 30);
+            this.medicalHistory.TabIndex = 10;
             // 
             // bcva
             // 
             this.bcva.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bcva.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bcva.Location = new System.Drawing.Point(321, 205);
-            this.bcva.MaxLength = 100;
+            this.bcva.MaxLength = 10;
             this.bcva.Name = "bcva";
             this.bcva.Size = new System.Drawing.Size(96, 30);
             this.bcva.TabIndex = 16;
@@ -799,12 +921,12 @@
             "Best",
             "Bad",
             "Ok"});
-            this.remark.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.remark.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.remark.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.remark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.remark.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remark.Location = new System.Drawing.Point(178, 205);
-            this.remark.MaxLength = 100;
+            this.remark.MaxLength = 10;
             this.remark.Name = "remark";
             this.remark.Size = new System.Drawing.Size(79, 30);
             this.remark.TabIndex = 15;
@@ -814,7 +936,7 @@
             this.vn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vn.Location = new System.Drawing.Point(321, 169);
-            this.vn.MaxLength = 100;
+            this.vn.MaxLength = 10;
             this.vn.Name = "vn";
             this.vn.Size = new System.Drawing.Size(96, 30);
             this.vn.TabIndex = 14;
@@ -824,7 +946,7 @@
             this.bp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bp.Location = new System.Drawing.Point(178, 169);
-            this.bp.MaxLength = 100;
+            this.bp.MaxLength = 10;
             this.bp.Name = "bp";
             this.bp.Size = new System.Drawing.Size(81, 30);
             this.bp.TabIndex = 13;
@@ -834,7 +956,7 @@
             this.pr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pr.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pr.Location = new System.Drawing.Point(321, 133);
-            this.pr.MaxLength = 100;
+            this.pr.MaxLength = 10;
             this.pr.Name = "pr";
             this.pr.Size = new System.Drawing.Size(96, 30);
             this.pr.TabIndex = 12;
@@ -844,34 +966,35 @@
             this.temp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.temp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp.Location = new System.Drawing.Point(178, 133);
-            this.temp.MaxLength = 100;
+            this.temp.MaxLength = 10;
             this.temp.Name = "temp";
             this.temp.Size = new System.Drawing.Size(81, 30);
             this.temp.TabIndex = 11;
             // 
-            // pasthistory
+            // pastHistory
             // 
-            this.pasthistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pasthistory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pasthistory.Location = new System.Drawing.Point(178, 61);
-            this.pasthistory.MaxLength = 100;
-            this.pasthistory.Name = "pasthistory";
-            this.pasthistory.Size = new System.Drawing.Size(239, 30);
-            this.pasthistory.TabIndex = 9;
+            this.pastHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pastHistory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pastHistory.Location = new System.Drawing.Point(178, 61);
+            this.pastHistory.MaxLength = 100;
+            this.pastHistory.Name = "pastHistory";
+            this.pastHistory.Size = new System.Drawing.Size(239, 30);
+            this.pastHistory.TabIndex = 9;
             // 
-            // complains
+            // compliance
             // 
-            this.complains.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.complains.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.complains.Location = new System.Drawing.Point(178, 25);
-            this.complains.MaxLength = 100;
-            this.complains.Name = "complains";
-            this.complains.Size = new System.Drawing.Size(239, 30);
-            this.complains.TabIndex = 8;
+            this.compliance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.compliance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compliance.Location = new System.Drawing.Point(178, 25);
+            this.compliance.MaxLength = 100;
+            this.compliance.Name = "compliance";
+            this.compliance.Size = new System.Drawing.Size(239, 30);
+            this.compliance.TabIndex = 8;
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.groupBox8);
             this.panel2.Controls.Add(this.groupBox4);
@@ -879,18 +1002,19 @@
             this.panel2.Controls.Add(this.groupBox5);
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox6);
-            this.panel2.Controls.Add(this.groupBox7);
-            this.panel2.Location = new System.Drawing.Point(0, -2);
+            this.panel2.Controls.Add(this.outpatientrecord);
+            this.panel2.Location = new System.Drawing.Point(39, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1028, 852);
+            this.panel2.Size = new System.Drawing.Size(1029, 1013);
             this.panel2.TabIndex = 23;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.pictureBox1);
-            this.groupBox8.Location = new System.Drawing.Point(12, 3);
+            this.groupBox8.Location = new System.Drawing.Point(11, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1004, 112);
+            this.groupBox8.Size = new System.Drawing.Size(1006, 112);
             this.groupBox8.TabIndex = 71;
             this.groupBox8.TabStop = false;
             // 
@@ -900,194 +1024,211 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(6, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(992, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(994, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox4
             // 
             this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox4.Controls.Add(this.chemicalno);
+            this.groupBox4.Controls.Add(this.chemicalyes);
+            this.groupBox4.Controls.Add(label1);
             this.groupBox4.Controls.Add(label31);
             this.groupBox4.Controls.Add(label26);
             this.groupBox4.Controls.Add(label27);
             this.groupBox4.Controls.Add(label28);
-            this.groupBox4.Controls.Add(this.checkBox9);
-            this.groupBox4.Controls.Add(this.checkBox10);
-            this.groupBox4.Controls.Add(label22);
-            this.groupBox4.Controls.Add(this.checkBox11);
-            this.groupBox4.Controls.Add(this.checkBox12);
+            this.groupBox4.Controls.Add(this.outpatient);
+            this.groupBox4.Controls.Add(this.inpatient);
             this.groupBox4.Controls.Add(label23);
-            this.groupBox4.Controls.Add(this.checkBox13);
-            this.groupBox4.Controls.Add(this.checkBox14);
+            this.groupBox4.Controls.Add(this.insuranceno);
+            this.groupBox4.Controls.Add(this.insuranceyes);
             this.groupBox4.Controls.Add(label24);
-            this.groupBox4.Controls.Add(this.checkBox15);
-            this.groupBox4.Controls.Add(this.checkBox16);
+            this.groupBox4.Controls.Add(this.latexno);
+            this.groupBox4.Controls.Add(this.latexyes);
             this.groupBox4.Controls.Add(label25);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.checkBox6);
+            this.groupBox4.Controls.Add(this.insectno);
+            this.groupBox4.Controls.Add(this.insectyes);
             this.groupBox4.Controls.Add(label20);
-            this.groupBox4.Controls.Add(this.checkBox7);
-            this.groupBox4.Controls.Add(this.checkBox8);
+            this.groupBox4.Controls.Add(this.envno);
+            this.groupBox4.Controls.Add(this.envyes);
             this.groupBox4.Controls.Add(label21);
-            this.groupBox4.Controls.Add(this.checkBox3);
-            this.groupBox4.Controls.Add(this.checkBox4);
+            this.groupBox4.Controls.Add(this.medicationno);
+            this.groupBox4.Controls.Add(this.medicationyes);
             this.groupBox4.Controls.Add(label19);
             this.groupBox4.Controls.Add(label18);
-            this.groupBox4.Controls.Add(this.checkBox2);
+            this.groupBox4.Controls.Add(this.foodno);
             this.groupBox4.Controls.Add(label17);
-            this.groupBox4.Controls.Add(this.checkBox1);
+            this.groupBox4.Controls.Add(this.foodyes);
             this.groupBox4.Controls.Add(label16);
             this.groupBox4.Controls.Add(label15);
-            this.groupBox4.Location = new System.Drawing.Point(447, 300);
+            this.groupBox4.Location = new System.Drawing.Point(448, 300);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(569, 357);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // checkBox9
+            // chemicalno
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(453, 323);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(18, 17);
-            this.checkBox9.TabIndex = 38;
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chemicalno.AutoSize = true;
+            this.chemicalno.Location = new System.Drawing.Point(453, 220);
+            this.chemicalno.Name = "chemicalno";
+            this.chemicalno.Size = new System.Drawing.Size(18, 17);
+            this.chemicalno.TabIndex = 70;
+            this.chemicalno.UseVisualStyleBackColor = true;
+            this.chemicalno.CheckedChanged += new System.EventHandler(this.chemicalno_CheckedChanged);
             // 
-            // checkBox10
+            // chemicalyes
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(344, 323);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(18, 17);
-            this.checkBox10.TabIndex = 37;
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.chemicalyes.AutoSize = true;
+            this.chemicalyes.Location = new System.Drawing.Point(344, 220);
+            this.chemicalyes.Name = "chemicalyes";
+            this.chemicalyes.Size = new System.Drawing.Size(18, 17);
+            this.chemicalyes.TabIndex = 69;
+            this.chemicalyes.UseVisualStyleBackColor = true;
+            this.chemicalyes.CheckedChanged += new System.EventHandler(this.chemicalyes_CheckedChanged);
             // 
-            // checkBox11
+            // outpatient
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(453, 300);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(18, 17);
-            this.checkBox11.TabIndex = 36;
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.outpatient.AutoSize = true;
+            this.outpatient.Location = new System.Drawing.Point(453, 327);
+            this.outpatient.Name = "outpatient";
+            this.outpatient.Size = new System.Drawing.Size(18, 17);
+            this.outpatient.TabIndex = 36;
+            this.outpatient.UseVisualStyleBackColor = true;
+            this.outpatient.CheckedChanged += new System.EventHandler(this.outpatient_CheckedChanged);
             // 
-            // checkBox12
+            // inpatient
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(344, 300);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(18, 17);
-            this.checkBox12.TabIndex = 35;
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.inpatient.AutoSize = true;
+            this.inpatient.Location = new System.Drawing.Point(344, 327);
+            this.inpatient.Name = "inpatient";
+            this.inpatient.Size = new System.Drawing.Size(18, 17);
+            this.inpatient.TabIndex = 35;
+            this.inpatient.UseVisualStyleBackColor = true;
+            this.inpatient.CheckedChanged += new System.EventHandler(this.inpatient_CheckedChanged);
             // 
-            // checkBox13
+            // insuranceno
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(453, 277);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(18, 17);
-            this.checkBox13.TabIndex = 34;
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.insuranceno.AutoSize = true;
+            this.insuranceno.Location = new System.Drawing.Point(453, 304);
+            this.insuranceno.Name = "insuranceno";
+            this.insuranceno.Size = new System.Drawing.Size(18, 17);
+            this.insuranceno.TabIndex = 34;
+            this.insuranceno.UseVisualStyleBackColor = true;
+            this.insuranceno.CheckedChanged += new System.EventHandler(this.insuranceno_CheckedChanged);
             // 
-            // checkBox14
+            // insuranceyes
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(344, 277);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(18, 17);
-            this.checkBox14.TabIndex = 33;
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.insuranceyes.AutoSize = true;
+            this.insuranceyes.Location = new System.Drawing.Point(344, 304);
+            this.insuranceyes.Name = "insuranceyes";
+            this.insuranceyes.Size = new System.Drawing.Size(18, 17);
+            this.insuranceyes.TabIndex = 33;
+            this.insuranceyes.UseVisualStyleBackColor = true;
+            this.insuranceyes.CheckedChanged += new System.EventHandler(this.insuranceyes_CheckedChanged);
             // 
-            // checkBox15
+            // latexno
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(453, 197);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(18, 17);
-            this.checkBox15.TabIndex = 32;
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.latexno.AutoSize = true;
+            this.latexno.Location = new System.Drawing.Point(453, 197);
+            this.latexno.Name = "latexno";
+            this.latexno.Size = new System.Drawing.Size(18, 17);
+            this.latexno.TabIndex = 32;
+            this.latexno.UseVisualStyleBackColor = true;
+            this.latexno.CheckedChanged += new System.EventHandler(this.latexno_CheckedChanged);
             // 
-            // checkBox16
+            // latexyes
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(344, 197);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(18, 17);
-            this.checkBox16.TabIndex = 31;
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.latexyes.AutoSize = true;
+            this.latexyes.Location = new System.Drawing.Point(344, 197);
+            this.latexyes.Name = "latexyes";
+            this.latexyes.Size = new System.Drawing.Size(18, 17);
+            this.latexyes.TabIndex = 31;
+            this.latexyes.UseVisualStyleBackColor = true;
+            this.latexyes.CheckedChanged += new System.EventHandler(this.latexyes_CheckedChanged);
             // 
-            // checkBox5
+            // insectno
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(453, 174);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(18, 17);
-            this.checkBox5.TabIndex = 30;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.insectno.AutoSize = true;
+            this.insectno.Location = new System.Drawing.Point(453, 174);
+            this.insectno.Name = "insectno";
+            this.insectno.Size = new System.Drawing.Size(18, 17);
+            this.insectno.TabIndex = 30;
+            this.insectno.UseVisualStyleBackColor = true;
+            this.insectno.CheckedChanged += new System.EventHandler(this.insectno_CheckedChanged);
             // 
-            // checkBox6
+            // insectyes
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(344, 174);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(18, 17);
-            this.checkBox6.TabIndex = 29;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.insectyes.AutoSize = true;
+            this.insectyes.Location = new System.Drawing.Point(344, 174);
+            this.insectyes.Name = "insectyes";
+            this.insectyes.Size = new System.Drawing.Size(18, 17);
+            this.insectyes.TabIndex = 29;
+            this.insectyes.UseVisualStyleBackColor = true;
+            this.insectyes.CheckedChanged += new System.EventHandler(this.insectyes_CheckedChanged);
             // 
-            // checkBox7
+            // envno
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(453, 151);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(18, 17);
-            this.checkBox7.TabIndex = 28;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.envno.AutoSize = true;
+            this.envno.Location = new System.Drawing.Point(453, 151);
+            this.envno.Name = "envno";
+            this.envno.Size = new System.Drawing.Size(18, 17);
+            this.envno.TabIndex = 28;
+            this.envno.UseVisualStyleBackColor = true;
+            this.envno.CheckedChanged += new System.EventHandler(this.envno_CheckedChanged);
             // 
-            // checkBox8
+            // envyes
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(344, 151);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(18, 17);
-            this.checkBox8.TabIndex = 27;
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.envyes.AutoSize = true;
+            this.envyes.Location = new System.Drawing.Point(344, 151);
+            this.envyes.Name = "envyes";
+            this.envyes.Size = new System.Drawing.Size(18, 17);
+            this.envyes.TabIndex = 27;
+            this.envyes.UseVisualStyleBackColor = true;
+            this.envyes.CheckedChanged += new System.EventHandler(this.envyes_CheckedChanged);
             // 
-            // checkBox3
+            // medicationno
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(453, 128);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(18, 17);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.medicationno.AutoSize = true;
+            this.medicationno.Location = new System.Drawing.Point(453, 128);
+            this.medicationno.Name = "medicationno";
+            this.medicationno.Size = new System.Drawing.Size(18, 17);
+            this.medicationno.TabIndex = 26;
+            this.medicationno.UseVisualStyleBackColor = true;
+            this.medicationno.CheckedChanged += new System.EventHandler(this.medicationno_CheckedChanged);
             // 
-            // checkBox4
+            // medicationyes
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(344, 128);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(18, 17);
-            this.checkBox4.TabIndex = 25;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.medicationyes.AutoSize = true;
+            this.medicationyes.Location = new System.Drawing.Point(344, 128);
+            this.medicationyes.Name = "medicationyes";
+            this.medicationyes.Size = new System.Drawing.Size(18, 17);
+            this.medicationyes.TabIndex = 25;
+            this.medicationyes.UseVisualStyleBackColor = true;
+            this.medicationyes.CheckedChanged += new System.EventHandler(this.medicationyes_CheckedChanged);
             // 
-            // checkBox2
+            // foodno
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(453, 105);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(18, 17);
-            this.checkBox2.TabIndex = 24;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.foodno.AutoSize = true;
+            this.foodno.Location = new System.Drawing.Point(453, 105);
+            this.foodno.Name = "foodno";
+            this.foodno.Size = new System.Drawing.Size(18, 17);
+            this.foodno.TabIndex = 24;
+            this.foodno.UseVisualStyleBackColor = true;
+            this.foodno.CheckedChanged += new System.EventHandler(this.foodno_CheckedChanged);
             // 
-            // checkBox1
+            // foodyes
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(344, 105);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox1.TabIndex = 23;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.foodyes.AutoSize = true;
+            this.foodyes.Location = new System.Drawing.Point(344, 105);
+            this.foodyes.Name = "foodyes";
+            this.foodyes.Size = new System.Drawing.Size(18, 17);
+            this.foodyes.TabIndex = 23;
+            this.foodyes.UseVisualStyleBackColor = true;
+            this.foodyes.CheckedChanged += new System.EventHandler(this.foodyes_CheckedChanged);
             // 
             // groupBox5
             // 
@@ -1106,7 +1247,7 @@
             this.treatment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.treatment.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treatment.Location = new System.Drawing.Point(143, 55);
-            this.treatment.MaxLength = 100;
+            this.treatment.MaxLength = 500;
             this.treatment.Name = "treatment";
             this.treatment.Size = new System.Drawing.Size(274, 30);
             this.treatment.TabIndex = 18;
@@ -1116,77 +1257,239 @@
             this.diagnosis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diagnosis.Location = new System.Drawing.Point(143, 19);
-            this.diagnosis.MaxLength = 100;
+            this.diagnosis.MaxLength = 500;
             this.diagnosis.Name = "diagnosis";
             this.diagnosis.Size = new System.Drawing.Size(274, 30);
             this.diagnosis.TabIndex = 17;
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(label2);
+            this.groupBox6.Controls.Add(this.colonoscopy);
+            this.groupBox6.Controls.Add(label3);
+            this.groupBox6.Controls.Add(this.pulmonary);
             this.groupBox6.Controls.Add(label36);
             this.groupBox6.Controls.Add(label34);
-            this.groupBox6.Controls.Add(this.iop);
+            this.groupBox6.Controls.Add(this.urine_test);
             this.groupBox6.Controls.Add(label35);
-            this.groupBox6.Controls.Add(this.iol);
+            this.groupBox6.Controls.Add(this.ecg);
             this.groupBox6.Controls.Add(label32);
-            this.groupBox6.Controls.Add(this.rbs);
+            this.groupBox6.Controls.Add(this.bloot_test);
             this.groupBox6.Controls.Add(label33);
-            this.groupBox6.Controls.Add(this.syringing);
-            this.groupBox6.Location = new System.Drawing.Point(12, 657);
+            this.groupBox6.Controls.Add(this.imaging);
+            this.groupBox6.Location = new System.Drawing.Point(11, 657);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1004, 114);
+            this.groupBox6.Size = new System.Drawing.Size(1007, 166);
             this.groupBox6.TabIndex = 25;
             this.groupBox6.TabStop = false;
             // 
-            // iop
+            // colonoscopy
             // 
-            this.iop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iop.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iop.Location = new System.Drawing.Point(314, 66);
-            this.iop.MaxLength = 100;
-            this.iop.Name = "iop";
-            this.iop.Size = new System.Drawing.Size(88, 30);
-            this.iop.TabIndex = 20;
+            this.colonoscopy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colonoscopy.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colonoscopy.Location = new System.Drawing.Point(829, 114);
+            this.colonoscopy.MaxLength = 100;
+            this.colonoscopy.Name = "colonoscopy";
+            this.colonoscopy.Size = new System.Drawing.Size(133, 30);
+            this.colonoscopy.TabIndex = 71;
             // 
-            // iol
+            // pulmonary
             // 
-            this.iol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iol.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iol.Location = new System.Drawing.Point(817, 66);
-            this.iol.MaxLength = 100;
-            this.iol.Name = "iol";
-            this.iol.Size = new System.Drawing.Size(133, 30);
-            this.iol.TabIndex = 22;
+            this.pulmonary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pulmonary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pulmonary.Location = new System.Drawing.Point(829, 74);
+            this.pulmonary.MaxLength = 100;
+            this.pulmonary.Name = "pulmonary";
+            this.pulmonary.Size = new System.Drawing.Size(134, 30);
+            this.pulmonary.TabIndex = 70;
             // 
-            // rbs
+            // urine_test
             // 
-            this.rbs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rbs.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbs.Location = new System.Drawing.Point(90, 66);
-            this.rbs.MaxLength = 100;
-            this.rbs.Name = "rbs";
-            this.rbs.Size = new System.Drawing.Size(87, 30);
-            this.rbs.TabIndex = 19;
+            this.urine_test.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.urine_test.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.urine_test.Location = new System.Drawing.Point(173, 114);
+            this.urine_test.MaxLength = 100;
+            this.urine_test.Name = "urine_test";
+            this.urine_test.Size = new System.Drawing.Size(107, 30);
+            this.urine_test.TabIndex = 20;
             // 
-            // syringing
+            // ecg
             // 
-            this.syringing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.syringing.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.syringing.Location = new System.Drawing.Point(510, 66);
-            this.syringing.MaxLength = 100;
-            this.syringing.Name = "syringing";
-            this.syringing.Size = new System.Drawing.Size(94, 30);
-            this.syringing.TabIndex = 21;
+            this.ecg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ecg.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ecg.Location = new System.Drawing.Point(458, 114);
+            this.ecg.MaxLength = 100;
+            this.ecg.Name = "ecg";
+            this.ecg.Size = new System.Drawing.Size(133, 30);
+            this.ecg.TabIndex = 22;
             // 
-            // groupBox7
+            // bloot_test
             // 
-            this.groupBox7.Controls.Add(label38);
-            this.groupBox7.Controls.Add(label37);
-            this.groupBox7.Location = new System.Drawing.Point(12, 772);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1004, 64);
-            this.groupBox7.TabIndex = 26;
-            this.groupBox7.TabStop = false;
+            this.bloot_test.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bloot_test.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bloot_test.Location = new System.Drawing.Point(173, 74);
+            this.bloot_test.MaxLength = 100;
+            this.bloot_test.Name = "bloot_test";
+            this.bloot_test.Size = new System.Drawing.Size(107, 30);
+            this.bloot_test.TabIndex = 19;
+            // 
+            // imaging
+            // 
+            this.imaging.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imaging.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imaging.Location = new System.Drawing.Point(458, 74);
+            this.imaging.MaxLength = 100;
+            this.imaging.Name = "imaging";
+            this.imaging.Size = new System.Drawing.Size(134, 30);
+            this.imaging.TabIndex = 21;
+            // 
+            // outpatientrecord
+            // 
+            this.outpatientrecord.Controls.Add(label37);
+            this.outpatientrecord.Controls.Add(this.state);
+            this.outpatientrecord.Controls.Add(label38);
+            this.outpatientrecord.Controls.Add(this.city);
+            this.outpatientrecord.Controls.Add(label39);
+            this.outpatientrecord.Controls.Add(this.district);
+            this.outpatientrecord.Controls.Add(label40);
+            this.outpatientrecord.Controls.Add(this.pin);
+            this.outpatientrecord.Controls.Add(label41);
+            this.outpatientrecord.Controls.Add(this.hospital_name);
+            this.outpatientrecord.Controls.Add(label42);
+            this.outpatientrecord.Controls.Add(label22);
+            this.outpatientrecord.Controls.Add(this.hospital_address);
+            this.outpatientrecord.Location = new System.Drawing.Point(11, 822);
+            this.outpatientrecord.Name = "outpatientrecord";
+            this.outpatientrecord.Size = new System.Drawing.Size(1007, 170);
+            this.outpatientrecord.TabIndex = 26;
+            this.outpatientrecord.TabStop = false;
+            this.outpatientrecord.Visible = false;
+            // 
+            // state
+            // 
+            this.state.AutoCompleteCustomSource.AddRange(new string[] {
+            "Andhra Pradesh",
+            "Arunachal Pradesh",
+            "Assam",
+            "Bihar",
+            "Chhattisgarh",
+            "Goa",
+            "Gujarat",
+            "Haryana",
+            "Himachal Pradesh",
+            "Jharkhand",
+            "Karnataka",
+            "Kerala",
+            "Madhya Pradesh",
+            "Maharastra",
+            "Manipur",
+            "Meghalaya",
+            "Mizoram",
+            "Nagaland",
+            "Odisha",
+            "Punjab",
+            "Rajsthan",
+            "Sikkim",
+            "Tamil Nadu",
+            "Telangana",
+            "Tripura",
+            "Uttarakhand",
+            "Uttar Pradesh",
+            "West Bengal"});
+            this.state.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.state.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.state.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.state.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.state.Location = new System.Drawing.Point(829, 107);
+            this.state.MaxLength = 100;
+            this.state.Name = "state";
+            this.state.Size = new System.Drawing.Size(132, 30);
+            this.state.TabIndex = 84;
+            // 
+            // city
+            // 
+            this.city.AutoCompleteCustomSource.AddRange(new string[] {
+            "Ranchi",
+            "Jamshedpur",
+            "Dhanbad",
+            "Bokaro Steel City",
+            "Deoghar",
+            "Phusro–Bermo–Bokaro Thermal",
+            "Hazaribagh",
+            "Giridih",
+            "Medininagar",
+            "Chirkunda",
+            "Ramgarh",
+            "Mumbai",
+            "Delhi",
+            "Kolkata",
+            "Chennai",
+            "Bangalore",
+            "Hyderabad",
+            "Ahmedabad",
+            "Pune",
+            "Surat",
+            "Jaipur",
+            "Kanpur",
+            "Lucknow",
+            "Nagpur",
+            "Indore",
+            "Patna",
+            "Bhopal",
+            "Thane",
+            "Vadodara",
+            "Visakhapatnam",
+            "Pimpri-Chinchwad"});
+            this.city.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.city.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.city.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.city.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.city.Location = new System.Drawing.Point(394, 107);
+            this.city.MaxLength = 50;
+            this.city.Name = "city";
+            this.city.Size = new System.Drawing.Size(134, 30);
+            this.city.TabIndex = 83;
+            // 
+            // district
+            // 
+            this.district.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.district.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.district.Location = new System.Drawing.Point(172, 107);
+            this.district.MaxLength = 50;
+            this.district.Name = "district";
+            this.district.Size = new System.Drawing.Size(142, 30);
+            this.district.TabIndex = 76;
+            // 
+            // pin
+            // 
+            this.pin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pin.Location = new System.Drawing.Point(621, 107);
+            this.pin.MaxLength = 6;
+            this.pin.Name = "pin";
+            this.pin.Size = new System.Drawing.Size(116, 30);
+            this.pin.TabIndex = 78;
+            this.pin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pin_KeyPress);
+            // 
+            // hospital_name
+            // 
+            this.hospital_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hospital_name.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hospital_name.Location = new System.Drawing.Point(172, 67);
+            this.hospital_name.MaxLength = 100;
+            this.hospital_name.Name = "hospital_name";
+            this.hospital_name.Size = new System.Drawing.Size(270, 30);
+            this.hospital_name.TabIndex = 75;
+            // 
+            // hospital_address
+            // 
+            this.hospital_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hospital_address.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hospital_address.Location = new System.Drawing.Point(558, 67);
+            this.hospital_address.MaxLength = 500;
+            this.hospital_address.Name = "hospital_address";
+            this.hospital_address.Size = new System.Drawing.Size(405, 30);
+            this.hospital_address.TabIndex = 77;
             // 
             // printDialog1
             // 
@@ -1211,12 +1514,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1028, 910);
+            this.ClientSize = new System.Drawing.Size(1106, 1095);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "application";
             this.Text = "application";
+            this.Load += new System.EventHandler(this.application_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1231,8 +1535,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.outpatientrecord.ResumeLayout(false);
+            this.outpatientrecord.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1248,7 +1552,7 @@
         private System.Windows.Forms.TextBox age;
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.TextBox sex;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -1260,38 +1564,47 @@
         private System.Windows.Forms.TextBox bp;
         private System.Windows.Forms.TextBox pr;
         private System.Windows.Forms.TextBox temp;
-        private System.Windows.Forms.TextBox medicalhistory;
-        private System.Windows.Forms.TextBox pasthistory;
-        private System.Windows.Forms.TextBox complains;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox medicalHistory;
+        private System.Windows.Forms.TextBox pastHistory;
+        private System.Windows.Forms.TextBox compliance;
+        private System.Windows.Forms.CheckBox outpatient;
+        private System.Windows.Forms.CheckBox inpatient;
+        private System.Windows.Forms.CheckBox insuranceno;
+        private System.Windows.Forms.CheckBox insuranceyes;
+        private System.Windows.Forms.CheckBox latexno;
+        private System.Windows.Forms.CheckBox latexyes;
+        private System.Windows.Forms.CheckBox insectno;
+        private System.Windows.Forms.CheckBox insectyes;
+        private System.Windows.Forms.CheckBox envno;
+        private System.Windows.Forms.CheckBox envyes;
+        private System.Windows.Forms.CheckBox medicationno;
+        private System.Windows.Forms.CheckBox medicationyes;
+        private System.Windows.Forms.CheckBox foodno;
+        private System.Windows.Forms.CheckBox foodyes;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox treatment;
         private System.Windows.Forms.TextBox diagnosis;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox iop;
-        private System.Windows.Forms.TextBox iol;
-        private System.Windows.Forms.TextBox rbs;
-        private System.Windows.Forms.TextBox syringing;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TextBox urine_test;
+        private System.Windows.Forms.TextBox ecg;
+        private System.Windows.Forms.TextBox bloot_test;
+        private System.Windows.Forms.TextBox imaging;
+        private System.Windows.Forms.GroupBox outpatientrecord;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox chemicalno;
+        private System.Windows.Forms.CheckBox chemicalyes;
+        private System.Windows.Forms.TextBox colonoscopy;
+        private System.Windows.Forms.TextBox pulmonary;
+        private System.Windows.Forms.TextBox state;
+        private System.Windows.Forms.TextBox city;
+        private System.Windows.Forms.TextBox district;
+        private System.Windows.Forms.TextBox pin;
+        private System.Windows.Forms.TextBox hospital_name;
+        private System.Windows.Forms.TextBox hospital_address;
+        private System.Windows.Forms.Button search;
     }
 }

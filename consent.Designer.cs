@@ -35,14 +35,16 @@
             System.Windows.Forms.Label contactLabel;
             System.Windows.Forms.Label sexLabel;
             System.Windows.Forms.Label addressLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(consent));
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label6;
+            System.Windows.Forms.Label label9;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(consent));
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.mrd = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.TextBox();
@@ -50,16 +52,18 @@
             this.age = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
             this.sex = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.emergency_contact = new System.Windows.Forms.TextBox();
+            this.relation = new System.Windows.Forms.TextBox();
+            this.father = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.operation = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             label5 = new System.Windows.Forms.Label();
             mrdLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
@@ -69,12 +73,15 @@
             addressLabel = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -147,6 +154,46 @@
             addressLabel.TabIndex = 11;
             addressLabel.Text = "Address";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.Location = new System.Drawing.Point(41, 21);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(150, 23);
+            label2.TabIndex = 21;
+            label2.Text = "Emergency  Name";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Location = new System.Drawing.Point(431, 21);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(77, 23);
+            label3.TabIndex = 23;
+            label3.Text = "In Family";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Location = new System.Drawing.Point(720, 21);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(59, 23);
+            label6.TabIndex = 25;
+            label6.Text = "Phone";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label9.Location = new System.Drawing.Point(41, 21);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(228, 23);
+            label9.TabIndex = 21;
+            label9.Text = "Operation/Procedure Details";
+            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -154,10 +201,11 @@
             this.panel2.Controls.Add(this.groupBox8);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox6);
             this.panel2.Location = new System.Drawing.Point(37, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1014, 465);
+            this.panel2.Size = new System.Drawing.Size(1014, 618);
             this.panel2.TabIndex = 26;
             // 
             // groupBox8
@@ -183,7 +231,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(mrdLabel);
@@ -204,17 +252,17 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(795, 138);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 25);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
+            this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
+            this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.TabIndex = 7;
+            this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
             // label4
             // 
@@ -251,7 +299,7 @@
             // 
             this.contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.contact.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.Location = new System.Drawing.Point(557, 130);
+            this.contact.Location = new System.Drawing.Point(557, 132);
             this.contact.MaxLength = 10;
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(179, 30);
@@ -268,6 +316,7 @@
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(143, 30);
             this.age.TabIndex = 2;
+            this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
             this.age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.age_KeyPress);
             // 
             // address
@@ -296,55 +345,147 @@
             this.sex.Size = new System.Drawing.Size(108, 30);
             this.sex.TabIndex = 3;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox2.Controls.Add(label6);
+            this.groupBox2.Controls.Add(this.emergency_contact);
+            this.groupBox2.Controls.Add(label3);
+            this.groupBox2.Controls.Add(this.relation);
+            this.groupBox2.Controls.Add(label2);
+            this.groupBox2.Controls.Add(this.father);
+            this.groupBox2.Location = new System.Drawing.Point(12, 295);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(984, 60);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            // 
+            // emergency_contact
+            // 
+            this.emergency_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.emergency_contact.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emergency_contact.Location = new System.Drawing.Point(795, 18);
+            this.emergency_contact.MaxLength = 10;
+            this.emergency_contact.Name = "emergency_contact";
+            this.emergency_contact.Size = new System.Drawing.Size(155, 30);
+            this.emergency_contact.TabIndex = 10;
+            this.emergency_contact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // relation
+            // 
+            this.relation.AutoCompleteCustomSource.AddRange(new string[] {
+            "Father",
+            "Mother",
+            "Sister",
+            "Brother",
+            "Husband",
+            "Wife",
+            "Son",
+            "Daughter",
+            "Friend",
+            "Other"});
+            this.relation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.relation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.relation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.relation.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relation.Location = new System.Drawing.Point(526, 18);
+            this.relation.MaxLength = 50;
+            this.relation.Name = "relation";
+            this.relation.Size = new System.Drawing.Size(154, 30);
+            this.relation.TabIndex = 9;
+            // 
+            // father
+            // 
+            this.father.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.father.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.father.Location = new System.Drawing.Point(196, 18);
+            this.father.MaxLength = 100;
+            this.father.Name = "father";
+            this.father.Size = new System.Drawing.Size(187, 30);
+            this.father.TabIndex = 8;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox3.Controls.Add(label9);
+            this.groupBox3.Controls.Add(this.operation);
+            this.groupBox3.Location = new System.Drawing.Point(12, 352);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(984, 60);
+            this.groupBox3.TabIndex = 31;
+            this.groupBox3.TabStop = false;
+            // 
+            // operation
+            // 
+            this.operation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.operation.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operation.Location = new System.Drawing.Point(302, 19);
+            this.operation.MaxLength = 500;
+            this.operation.Name = "operation";
+            this.operation.Size = new System.Drawing.Size(648, 30);
+            this.operation.TabIndex = 11;
+            // 
             // groupBox6
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox6.Controls.Add(this.button3);
             this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Location = new System.Drawing.Point(12, 353);
+            this.groupBox6.Location = new System.Drawing.Point(12, 409);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(984, 60);
+            this.groupBox6.Size = new System.Drawing.Size(984, 67);
             this.groupBox6.TabIndex = 25;
             this.groupBox6.TabStop = false;
             // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.Gold;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::sarthi.Properties.Resources.refresh__3_;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(393, 17);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(226, 31);
-            this.button3.TabIndex = 29;
+            this.button3.Size = new System.Drawing.Size(226, 37);
+            this.button3.TabIndex = 19;
             this.button3.Text = "Refresh";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(724, 17);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(226, 31);
-            this.button2.TabIndex = 28;
+            this.button2.Size = new System.Drawing.Size(226, 37);
+            this.button2.TabIndex = 20;
             this.button2.Text = "Print Declaration";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(45, 17);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 31);
-            this.button1.TabIndex = 27;
+            this.button1.Size = new System.Drawing.Size(222, 37);
+            this.button1.TabIndex = 18;
             this.button1.Text = "Print Consent";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // printDocument1
@@ -361,90 +502,28 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-586, 466);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(700, 704);
-            this.label1.TabIndex = 27;
-            this.label1.Text = resources.GetString("label1.Text");
-            this.label1.Visible = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(label3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(label2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 295);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(984, 60);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label2.Location = new System.Drawing.Point(41, 21);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(119, 23);
-            label2.TabIndex = 21;
-            label2.Text = "Father\'s Name";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(196, 18);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 30);
-            this.textBox1.TabIndex = 20;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label3.Location = new System.Drawing.Point(553, 21);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(77, 23);
-            label3.TabIndex = 23;
-            label3.Text = "In Family";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(708, 18);
-            this.textBox2.MaxLength = 100;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 30);
-            this.textBox2.TabIndex = 22;
-            // 
             // consent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1088, 863);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "consent";
             this.Text = "consent";
+            this.Load += new System.EventHandler(this.consent_Load);
             this.panel2.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -454,7 +533,7 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox mrd;
         private System.Windows.Forms.TextBox name;
@@ -468,9 +547,11 @@
         private System.Windows.Forms.Button button3;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox relation;
+        private System.Windows.Forms.TextBox father;
+        private System.Windows.Forms.TextBox emergency_contact;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox operation;
     }
 }

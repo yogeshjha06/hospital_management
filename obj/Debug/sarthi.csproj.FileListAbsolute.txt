@@ -44,3 +44,12 @@ D:\v_0.2\sarthi\obj\Debug\sarthi.consent.resources
 D:\v_0.2\sarthi\obj\Debug\sarthi.help.resources
 D:\v_0.2\sarthi\obj\Debug\sarthi.splash.resources
 D:\v_0.2\sarthi\obj\Debug\sarthi.search.resources
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.Core.dll
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDS.dll
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDSDataService.dll
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.Core.pdb
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.Core.xml
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDS.pdb
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDS.xml
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDSDataService.pdb
+D:\v_0.2\sarthi\bin\Debug\AWSSDK.RDSDataService.xml

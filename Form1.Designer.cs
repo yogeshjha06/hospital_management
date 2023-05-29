@@ -32,11 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.help_but = new System.Windows.Forms.Button();
             this.declaration_but = new System.Windows.Forms.Button();
             this.consent_but = new System.Windows.Forms.Button();
@@ -44,7 +39,12 @@
             this.ot_but = new System.Windows.Forms.Button();
             this.application_but = new System.Windows.Forms.Button();
             this.user_details_but = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -92,60 +92,6 @@
             this.label2.Size = new System.Drawing.Size(150, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "© Copyright Yogesh Jha";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 134);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(262, 42);
-            this.panel5.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dr. Amit Kumar Jayswal";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(262, 134);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(262, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(839, 33);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(262, 33);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(839, 588);
-            this.panel3.TabIndex = 2;
             // 
             // help_but
             // 
@@ -268,10 +214,43 @@
             this.user_details_but.Name = "user_details_but";
             this.user_details_but.Size = new System.Drawing.Size(262, 59);
             this.user_details_but.TabIndex = 0;
-            this.user_details_but.Text = "User Details";
+            this.user_details_but.Text = "Add Patient";
             this.user_details_but.UseVisualStyleBackColor = true;
             this.user_details_but.Click += new System.EventHandler(this.user_details_but_Click);
             this.user_details_but.MouseClick += new System.Windows.Forms.MouseEventHandler(this.user_details_but_MouseClick);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 134);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(262, 42);
+            this.panel5.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Admin Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(262, 134);
+            this.panel4.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -284,6 +263,27 @@
             this.pictureBox1.Size = new System.Drawing.Size(262, 134);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(262, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(839, 33);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(262, 33);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(839, 588);
+            this.panel3.TabIndex = 2;
             // 
             // Form1
             // 
@@ -298,6 +298,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sarthi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

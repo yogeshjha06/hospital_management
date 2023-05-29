@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sarthi", "sarthi.csproj", "{D97BDD73-7DBD-4870-9F0B-957D00F164EA}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{F9D5386B-E2CC-4D11-9939-5961F8A9489C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\sarthi_final_1.2.1\Setup\Setup.vdproj", "{977FCBA9-A636-4164-8D26-37204A937FD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{D97BDD73-7DBD-4870-9F0B-957D00F164EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D97BDD73-7DBD-4870-9F0B-957D00F164EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97BDD73-7DBD-4870-9F0B-957D00F164EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9D5386B-E2CC-4D11-9939-5961F8A9489C}.Debug|Any CPU.ActiveCfg = Debug
-		{F9D5386B-E2CC-4D11-9939-5961F8A9489C}.Release|Any CPU.ActiveCfg = Release
+		{977FCBA9-A636-4164-8D26-37204A937FD8}.Debug|Any CPU.ActiveCfg = Debug
+		{977FCBA9-A636-4164-8D26-37204A937FD8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

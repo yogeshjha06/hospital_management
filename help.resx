@@ -118,27 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>A powerful and versatile software that provides a range of tools to simplify your workflow and increase productivity. 
-With its intuitive interface and user-friendly features, "Sarthi" is an essential tool for medical related Inventory and 
-individuals looking to streamline their operations and achieve their goals.</value>
+    <value>Welcome to the Centralized Medical Record System, a modern desktop application developed by Yogesh Kumar Jha. 
+This innovative system aims to revolutionize the management of medical records, providing a centralized and 
+efficient solution for healthcare providers.</value>
   </data>
   <data name="label18.Text" xml:space="preserve">
-    <value>Our software for eye doctor (Dr. AMIT Kr. JAYSWAL) for SHRI GANESH HOSPITAL is designed to revolutionize the 
-way that eye care professionals provide patient care. 
-With this innovative tool, eye doctors can efficiently manage their patient information and streamline their daily 
-operations, ultimately resulting in improved patient outcomes and higher levels of patient satisfaction.
+    <value>1. Navigation: Familiarize yourself with the application's 
+navigation and menu structure to easily access different 
+sections and functionalities. Use the main menu or 
+sidebar to navigate through the system.
 
-Our software is equipped with a wide range of features that are specifically tailored to meet the unique needs 
-of eye doctors. These features include patient scheduling and appointment management, electronic health records
-(EHR) management, automated reminders, and more. Our software also includes diagnostic tools and visual aids 
-that allow eye doctors to accurately diagnose and treat a wide range of eye conditions, including myopia, hyperopia, 
-astigmatism, and more.
-With our software, eye doctors can easily manage their patient data, including medical history, prescriptions, and 
-treatment plans. This allows them to quickly and easily access patient information and make informed decisions regarding 
-patient care. Additionally, our software is equipped with advanced security features to ensure that patient data is kept safe and 
-confidential.
-Overall, our software is a game-changer for eye doctors. By providing advanced diagnostic tools, streamlined 
-operations, and comprehensive patient data management, our software allows eye doctors to focus on what they do 
-best - providing high-quality care to their patients.</value>
+2. Patient Search: Use the search functionality to quickly 
+locate a specific patient's record. Enter relevant details 
+such as the patient's name, unique identification number, 
+or date of birth to narrow down the search results.
+
+3. Data Entry: Ensure accurate and complete data entry 
+when creating or updating patient records. Double-
+check the information entered, including demographics, 
+medical history, and treatment details, to maintain data 
+integrity.
+
+4. Privacy and Security: Adhere to privacy and security best 
+practices when handling patient data. Regularly change 
+your password, avoid sharing login credentials, and log out 
+of the system when not in use. Report any suspicious 
+activities or breaches to the system administrator.
+</value>
   </data>
 </root>
