@@ -514,7 +514,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.dateDischarge);
             this.groupBox2.Controls.Add(label7);
             this.groupBox2.Controls.Add(this.dateSurgery);
@@ -568,9 +567,9 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(331, 21);
+            this.button1.Location = new System.Drawing.Point(304, 21);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 37);
+            this.button1.Size = new System.Drawing.Size(141, 37);
             this.button1.TabIndex = 32;
             this.button1.Text = "    Refresh";
             this.button1.UseVisualStyleBackColor = false;
@@ -580,11 +579,11 @@
             // 
             this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.Location = new System.Drawing.Point(822, 138);
             this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.Size = new System.Drawing.Size(128, 25);
             this.date.TabIndex = 7;
             this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
@@ -602,10 +601,10 @@
             // 
             this.mrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mrd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrd.Location = new System.Drawing.Point(795, 96);
+            this.mrd.Location = new System.Drawing.Point(822, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(155, 30);
+            this.mrd.Size = new System.Drawing.Size(128, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -700,12 +699,13 @@
             // 
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.AutoSize = true;
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.print);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Location = new System.Drawing.Point(-15, 845);
+            this.groupBox4.Location = new System.Drawing.Point(-15, 653);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1081, 109);
+            this.groupBox4.Size = new System.Drawing.Size(1081, 79);
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             // 
@@ -721,7 +721,7 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(640, 21);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 37);
+            this.button2.Size = new System.Drawing.Size(141, 37);
             this.button2.TabIndex = 34;
             this.button2.Text = "  Find";
             this.button2.UseVisualStyleBackColor = false;
@@ -737,9 +737,9 @@
             this.print.ForeColor = System.Drawing.Color.White;
             this.print.Image = global::sarthi.Properties.Resources.printer;
             this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.print.Location = new System.Drawing.Point(492, 21);
+            this.print.Location = new System.Drawing.Point(472, 21);
             this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(114, 37);
+            this.print.Size = new System.Drawing.Size(141, 37);
             this.print.TabIndex = 33;
             this.print.Text = "  Print";
             this.print.UseVisualStyleBackColor = false;
@@ -767,7 +767,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -792,6 +791,7 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.groupBox8);
@@ -802,9 +802,9 @@
             this.panel2.Controls.Add(this.groupBox6);
             this.panel2.Controls.Add(this.groupBox7);
             this.panel2.Controls.Add(this.groupBox9);
-            this.panel2.Location = new System.Drawing.Point(16, -1);
+            this.panel2.Location = new System.Drawing.Point(3, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1014, 848);
+            this.panel2.Size = new System.Drawing.Size(1035, 646);
             this.panel2.TabIndex = 27;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -821,7 +821,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox5.Controls.Add(this.doctor);
             this.groupBox5.Controls.Add(label3);
             this.groupBox5.Controls.Add(this.treatment);
@@ -837,7 +836,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox3.Controls.Add(this.colonoscopy);
             this.groupBox3.Controls.Add(clono);
             this.groupBox3.Controls.Add(this.pulmonary);
@@ -920,7 +918,6 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox6.Controls.Add(label14);
             this.groupBox6.Controls.Add(this.medRecord);
             this.groupBox6.Controls.Add(label11);
@@ -967,7 +964,6 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox7.Controls.Add(label25);
             this.groupBox7.Controls.Add(this.chemical);
             this.groupBox7.Controls.Add(label16);
@@ -1050,7 +1046,6 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox9.Controls.Add(this.state);
             this.groupBox9.Controls.Add(label26);
             this.groupBox9.Controls.Add(this.pin);
@@ -1119,7 +1114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1050, 911);
+            this.ClientSize = new System.Drawing.Size(1050, 731);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1147,6 +1142,7 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

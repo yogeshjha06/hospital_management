@@ -232,20 +232,20 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.date);
-            this.groupBox1.Controls.Add(label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(mrdLabel);
-            this.groupBox1.Controls.Add(nameLabel);
             this.groupBox1.Controls.Add(this.mrd);
             this.groupBox1.Controls.Add(this.name);
             this.groupBox1.Controls.Add(this.contact);
-            this.groupBox1.Controls.Add(ageLabel);
-            this.groupBox1.Controls.Add(contactLabel);
             this.groupBox1.Controls.Add(this.age);
             this.groupBox1.Controls.Add(this.address);
+            this.groupBox1.Controls.Add(this.sex);
+            this.groupBox1.Controls.Add(label5);
+            this.groupBox1.Controls.Add(mrdLabel);
+            this.groupBox1.Controls.Add(nameLabel);
+            this.groupBox1.Controls.Add(ageLabel);
+            this.groupBox1.Controls.Add(contactLabel);
             this.groupBox1.Controls.Add(sexLabel);
             this.groupBox1.Controls.Add(addressLabel);
-            this.groupBox1.Controls.Add(this.sex);
             this.groupBox1.Location = new System.Drawing.Point(12, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(984, 186);
@@ -256,11 +256,11 @@
             // 
             this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.Location = new System.Drawing.Point(814, 138);
             this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.Size = new System.Drawing.Size(136, 25);
             this.date.TabIndex = 7;
             this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
@@ -278,10 +278,10 @@
             // 
             this.mrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mrd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrd.Location = new System.Drawing.Point(795, 96);
+            this.mrd.Location = new System.Drawing.Point(814, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(155, 30);
+            this.mrd.Size = new System.Drawing.Size(136, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -326,7 +326,7 @@
             this.address.Location = new System.Drawing.Point(124, 132);
             this.address.MaxLength = 200;
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(351, 30);
+            this.address.Size = new System.Drawing.Size(329, 30);
             this.address.TabIndex = 5;
             // 
             // sex
@@ -348,12 +348,12 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(label6);
             this.groupBox2.Controls.Add(this.emergency_contact);
-            this.groupBox2.Controls.Add(label3);
             this.groupBox2.Controls.Add(this.relation);
-            this.groupBox2.Controls.Add(label2);
             this.groupBox2.Controls.Add(this.father);
+            this.groupBox2.Controls.Add(label6);
+            this.groupBox2.Controls.Add(label3);
+            this.groupBox2.Controls.Add(label2);
             this.groupBox2.Location = new System.Drawing.Point(12, 295);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(984, 60);
@@ -398,17 +398,17 @@
             // 
             this.father.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.father.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.father.Location = new System.Drawing.Point(196, 18);
+            this.father.Location = new System.Drawing.Point(206, 18);
             this.father.MaxLength = 100;
             this.father.Name = "father";
-            this.father.Size = new System.Drawing.Size(187, 30);
+            this.father.Size = new System.Drawing.Size(177, 30);
             this.father.TabIndex = 8;
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox3.Controls.Add(label9);
             this.groupBox3.Controls.Add(this.operation);
+            this.groupBox3.Controls.Add(label9);
             this.groupBox3.Location = new System.Drawing.Point(12, 352);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(984, 60);

@@ -60,6 +60,7 @@
             this.actiontaken = new System.Windows.Forms.TextBox();
             this.complication = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.search = new System.Windows.Forms.Button();
             this.date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.mrd = new System.Windows.Forms.TextBox();
@@ -92,7 +93,6 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.search = new System.Windows.Forms.Button();
             label31 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             mrdLabel = new System.Windows.Forms.Label();
@@ -384,9 +384,9 @@
             this.panel2.Controls.Add(this.groupBox6);
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.outpatientrecord);
-            this.panel2.Location = new System.Drawing.Point(0, -4);
+            this.panel2.Location = new System.Drawing.Point(12, -4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1012, 888);
+            this.panel2.Size = new System.Drawing.Size(1040, 609);
             this.panel2.TabIndex = 24;
             // 
             // groupBox8
@@ -410,14 +410,13 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox4.Controls.Add(label1);
             this.groupBox4.Controls.Add(this.actiontaken);
             this.groupBox4.Controls.Add(label29);
             this.groupBox4.Controls.Add(this.complication);
-            this.groupBox4.Location = new System.Drawing.Point(493, 336);
+            this.groupBox4.Location = new System.Drawing.Point(498, 336);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(503, 208);
+            this.groupBox4.Size = new System.Drawing.Size(498, 208);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
             // 
@@ -429,7 +428,7 @@
             this.actiontaken.MaxLength = 500;
             this.actiontaken.Multiline = true;
             this.actiontaken.Name = "actiontaken";
-            this.actiontaken.Size = new System.Drawing.Size(437, 54);
+            this.actiontaken.Size = new System.Drawing.Size(450, 54);
             this.actiontaken.TabIndex = 42;
             // 
             // complication
@@ -440,12 +439,11 @@
             this.complication.MaxLength = 500;
             this.complication.Multiline = true;
             this.complication.Name = "complication";
-            this.complication.Size = new System.Drawing.Size(437, 54);
+            this.complication.Size = new System.Drawing.Size(450, 54);
             this.complication.TabIndex = 9;
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
@@ -468,15 +466,28 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // search
+            // 
+            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.search.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.search.Image = global::sarthi.Properties.Resources.search1;
+            this.search.Location = new System.Drawing.Point(907, 95);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(33, 31);
+            this.search.TabIndex = 26;
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
             // date
             // 
             this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.Location = new System.Drawing.Point(809, 138);
             this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(145, 25);
+            this.date.Size = new System.Drawing.Size(131, 25);
             this.date.TabIndex = 7;
             this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
@@ -484,7 +495,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(333, 18);
+            this.label4.Location = new System.Drawing.Point(338, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(314, 28);
             this.label4.TabIndex = 17;
@@ -494,10 +505,10 @@
             // 
             this.mrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mrd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrd.Location = new System.Drawing.Point(795, 96);
+            this.mrd.Location = new System.Drawing.Point(809, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(106, 30);
+            this.mrd.Size = new System.Drawing.Size(92, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -567,7 +578,7 @@
             this.groupBox5.Controls.Add(this.detail);
             this.groupBox5.Location = new System.Drawing.Point(12, 336);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(475, 208);
+            this.groupBox5.Size = new System.Drawing.Size(480, 208);
             this.groupBox5.TabIndex = 24;
             this.groupBox5.TabStop = false;
             // 
@@ -579,7 +590,7 @@
             this.postdetails.MaxLength = 500;
             this.postdetails.Multiline = true;
             this.postdetails.Name = "postdetails";
-            this.postdetails.Size = new System.Drawing.Size(406, 54);
+            this.postdetails.Size = new System.Drawing.Size(412, 54);
             this.postdetails.TabIndex = 43;
             // 
             // detail
@@ -590,12 +601,11 @@
             this.detail.MaxLength = 500;
             this.detail.Multiline = true;
             this.detail.Name = "detail";
-            this.detail.Size = new System.Drawing.Size(406, 54);
+            this.detail.Size = new System.Drawing.Size(412, 54);
             this.detail.TabIndex = 8;
             // 
             // groupBox6
             // 
-            this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox6.Controls.Add(this.anaesthesia);
             this.groupBox6.Controls.Add(this.otout);
             this.groupBox6.Controls.Add(label2);
@@ -824,9 +834,9 @@
             this.groupBox2.Controls.Add(this.print);
             this.groupBox2.Controls.Add(this.save_ot);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(-4, 906);
+            this.groupBox2.Location = new System.Drawing.Point(-4, 622);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1016, 92);
+            this.groupBox2.Size = new System.Drawing.Size(1070, 92);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
@@ -840,9 +850,9 @@
             this.print.ForeColor = System.Drawing.Color.White;
             this.print.Image = global::sarthi.Properties.Resources.printer;
             this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.print.Location = new System.Drawing.Point(438, 18);
+            this.print.Location = new System.Drawing.Point(458, 18);
             this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(114, 37);
+            this.print.Size = new System.Drawing.Size(141, 37);
             this.print.TabIndex = 40;
             this.print.Text = "  Print";
             this.print.UseVisualStyleBackColor = false;
@@ -858,9 +868,9 @@
             this.save_ot.ForeColor = System.Drawing.Color.White;
             this.save_ot.Image = global::sarthi.Properties.Resources.save;
             this.save_ot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_ot.Location = new System.Drawing.Point(604, 18);
+            this.save_ot.Location = new System.Drawing.Point(620, 18);
             this.save_ot.Name = "save_ot";
-            this.save_ot.Size = new System.Drawing.Size(114, 37);
+            this.save_ot.Size = new System.Drawing.Size(141, 37);
             this.save_ot.TabIndex = 41;
             this.save_ot.Text = "   Save";
             this.save_ot.UseVisualStyleBackColor = false;
@@ -876,9 +886,9 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(279, 18);
+            this.button1.Location = new System.Drawing.Point(295, 18);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 37);
+            this.button1.Size = new System.Drawing.Size(141, 37);
             this.button1.TabIndex = 39;
             this.button1.Text = "    Refresh";
             this.button1.UseVisualStyleBackColor = false;
@@ -902,25 +912,12 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // search
-            // 
-            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.search.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.search.Image = global::sarthi.Properties.Resources.search1;
-            this.search.Location = new System.Drawing.Point(907, 95);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(33, 31);
-            this.search.TabIndex = 26;
-            this.search.UseVisualStyleBackColor = true;
-            this.search.Click += new System.EventHandler(this.search_Click);
-            // 
             // ot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1010, 973);
+            this.ClientSize = new System.Drawing.Size(1064, 689);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

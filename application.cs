@@ -552,6 +552,7 @@ namespace sarthi
         private void application_Load(object sender, EventArgs e)
         {
             date.Value = DateTime.Now;
+            
         }
 
         private void search_Click(object sender, EventArgs e)
@@ -583,7 +584,7 @@ namespace sarthi
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            AutoScroll = true;
         }
     }
 }

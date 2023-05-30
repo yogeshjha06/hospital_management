@@ -318,6 +318,7 @@
     <None Include="Resources\refresh %283%29.png" />
     <None Include="Resources\find-user.png" />
     <None Include="Resources\search1.png" />
+    <None Include="Resources\up %281%29.png" />
     <Content Include="sarthi.ico" />
   </ItemGroup>
   <ItemGroup>

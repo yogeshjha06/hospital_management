@@ -233,7 +233,7 @@
             // 
             contactLabel.AutoSize = true;
             contactLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            contactLabel.Location = new System.Drawing.Point(481, 133);
+            contactLabel.Location = new System.Drawing.Point(470, 133);
             contactLabel.Name = "contactLabel";
             contactLabel.Size = new System.Drawing.Size(70, 23);
             contactLabel.TabIndex = 13;
@@ -243,7 +243,7 @@
             // 
             sexLabel.AutoSize = true;
             sexLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sexLabel.Location = new System.Drawing.Point(584, 99);
+            sexLabel.Location = new System.Drawing.Point(574, 99);
             sexLabel.Name = "sexLabel";
             sexLabel.Size = new System.Drawing.Size(36, 23);
             sexLabel.TabIndex = 9;
@@ -383,21 +383,21 @@
             // 
             label17.AutoSize = true;
             label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label17.Location = new System.Drawing.Point(313, 63);
+            label17.Location = new System.Drawing.Point(335, 63);
             label17.Name = "label17";
-            label17.Size = new System.Drawing.Size(89, 23);
+            label17.Size = new System.Drawing.Size(34, 23);
             label17.TabIndex = 41;
-            label17.Text = "Applicable";
+            label17.Text = "Yes";
             // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label18.Location = new System.Drawing.Point(422, 63);
+            label18.Location = new System.Drawing.Point(444, 63);
             label18.Name = "label18";
-            label18.Size = new System.Drawing.Size(121, 23);
+            label18.Size = new System.Drawing.Size(33, 23);
             label18.TabIndex = 43;
-            label18.Text = "Not applicable";
+            label18.Text = "No";
             // 
             // label19
             // 
@@ -463,21 +463,21 @@
             // 
             label26.AutoSize = true;
             label26.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label26.Location = new System.Drawing.Point(422, 261);
+            label26.Location = new System.Drawing.Point(444, 261);
             label26.Name = "label26";
-            label26.Size = new System.Drawing.Size(121, 23);
+            label26.Size = new System.Drawing.Size(33, 23);
             label26.TabIndex = 67;
-            label26.Text = "Not applicable";
+            label26.Text = "No";
             // 
             // label27
             // 
             label27.AutoSize = true;
             label27.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label27.Location = new System.Drawing.Point(313, 261);
+            label27.Location = new System.Drawing.Point(335, 261);
             label27.Name = "label27";
-            label27.Size = new System.Drawing.Size(89, 23);
+            label27.Size = new System.Drawing.Size(34, 23);
             label27.TabIndex = 66;
-            label27.Text = "Applicable";
+            label27.Text = "Yes";
             // 
             // label28
             // 
@@ -604,7 +604,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label22.Location = new System.Drawing.Point(423, 18);
+            label22.Location = new System.Drawing.Point(428, 18);
             label22.Name = "label22";
             label22.Size = new System.Drawing.Size(123, 23);
             label22.TabIndex = 74;
@@ -664,7 +664,7 @@
             // 
             label42.AutoSize = true;
             label42.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label42.Location = new System.Drawing.Point(42, 69);
+            label42.Location = new System.Drawing.Point(43, 74);
             label42.Name = "label42";
             label42.Size = new System.Drawing.Size(123, 23);
             label42.TabIndex = 79;
@@ -672,7 +672,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
@@ -689,9 +689,9 @@
             this.groupBox1.Controls.Add(sexLabel);
             this.groupBox1.Controls.Add(addressLabel);
             this.groupBox1.Controls.Add(this.sex);
-            this.groupBox1.Location = new System.Drawing.Point(11, 115);
+            this.groupBox1.Location = new System.Drawing.Point(19, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1006, 186);
+            this.groupBox1.Size = new System.Drawing.Size(1020, 186);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
@@ -712,11 +712,11 @@
             // 
             this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.Location = new System.Drawing.Point(806, 138);
             this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.Size = new System.Drawing.Size(144, 25);
             this.date.TabIndex = 7;
             this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
@@ -734,10 +734,10 @@
             // 
             this.mrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mrd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrd.Location = new System.Drawing.Point(795, 96);
+            this.mrd.Location = new System.Drawing.Point(806, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(116, 30);
+            this.mrd.Size = new System.Drawing.Size(105, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -748,7 +748,7 @@
             this.name.Location = new System.Drawing.Point(124, 96);
             this.name.MaxLength = 100;
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(259, 30);
+            this.name.Size = new System.Drawing.Size(240, 30);
             this.name.TabIndex = 1;
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
@@ -770,7 +770,7 @@
             this.age.Location = new System.Drawing.Point(435, 96);
             this.age.MaxLength = 3;
             this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(143, 30);
+            this.age.Size = new System.Drawing.Size(120, 30);
             this.age.TabIndex = 2;
             this.age.TextChanged += new System.EventHandler(this.age_TextChanged);
             this.age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.age_KeyPress);
@@ -782,7 +782,7 @@
             this.address.Location = new System.Drawing.Point(124, 132);
             this.address.MaxLength = 200;
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(351, 30);
+            this.address.Size = new System.Drawing.Size(332, 30);
             this.address.TabIndex = 5;
             // 
             // sex
@@ -803,13 +803,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.add_bt);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 1034);
+            this.groupBox2.Location = new System.Drawing.Point(0, 664);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1106, 61);
+            this.groupBox2.Size = new System.Drawing.Size(1106, 77);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
@@ -823,9 +825,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::sarthi.Properties.Resources.printer;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(498, 17);
+            this.button2.Location = new System.Drawing.Point(492, 19);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 37);
+            this.button2.Size = new System.Drawing.Size(141, 37);
             this.button2.TabIndex = 40;
             this.button2.Text = "  Print";
             this.button2.UseVisualStyleBackColor = false;
@@ -841,9 +843,9 @@
             this.add_bt.ForeColor = System.Drawing.Color.White;
             this.add_bt.Image = global::sarthi.Properties.Resources.save;
             this.add_bt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_bt.Location = new System.Drawing.Point(662, 17);
+            this.add_bt.Location = new System.Drawing.Point(656, 19);
             this.add_bt.Name = "add_bt";
-            this.add_bt.Size = new System.Drawing.Size(124, 37);
+            this.add_bt.Size = new System.Drawing.Size(141, 37);
             this.add_bt.TabIndex = 41;
             this.add_bt.Text = "Save";
             this.add_bt.UseVisualStyleBackColor = false;
@@ -859,9 +861,9 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(333, 17);
+            this.button1.Location = new System.Drawing.Point(327, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 37);
+            this.button1.Size = new System.Drawing.Size(141, 37);
             this.button1.TabIndex = 39;
             this.button1.Text = "    Refresh";
             this.button1.UseVisualStyleBackColor = false;
@@ -869,7 +871,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox3.AutoSize = true;
             this.groupBox3.Controls.Add(this.medicalHistory);
             this.groupBox3.Controls.Add(label13);
             this.groupBox3.Controls.Add(this.bcva);
@@ -888,9 +890,9 @@
             this.groupBox3.Controls.Add(this.pastHistory);
             this.groupBox3.Controls.Add(label6);
             this.groupBox3.Controls.Add(this.compliance);
-            this.groupBox3.Location = new System.Drawing.Point(11, 300);
+            this.groupBox3.Location = new System.Drawing.Point(19, 300);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(431, 257);
+            this.groupBox3.Size = new System.Drawing.Size(443, 257);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             // 
@@ -1003,18 +1005,18 @@
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox6);
             this.panel2.Controls.Add(this.outpatientrecord);
-            this.panel2.Location = new System.Drawing.Point(39, -2);
+            this.panel2.Location = new System.Drawing.Point(0, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1029, 1013);
+            this.panel2.Size = new System.Drawing.Size(1106, 660);
             this.panel2.TabIndex = 23;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.pictureBox1);
-            this.groupBox8.Location = new System.Drawing.Point(11, 3);
+            this.groupBox8.Location = new System.Drawing.Point(19, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1006, 112);
+            this.groupBox8.Size = new System.Drawing.Size(1020, 112);
             this.groupBox8.TabIndex = 71;
             this.groupBox8.TabStop = false;
             // 
@@ -1024,14 +1026,14 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(6, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(994, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(1008, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox4.AutoSize = true;
             this.groupBox4.Controls.Add(this.chemicalno);
             this.groupBox4.Controls.Add(this.chemicalyes);
             this.groupBox4.Controls.Add(label1);
@@ -1063,9 +1065,9 @@
             this.groupBox4.Controls.Add(this.foodyes);
             this.groupBox4.Controls.Add(label16);
             this.groupBox4.Controls.Add(label15);
-            this.groupBox4.Location = new System.Drawing.Point(448, 300);
+            this.groupBox4.Location = new System.Drawing.Point(473, 300);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(569, 357);
+            this.groupBox4.Size = new System.Drawing.Size(566, 365);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
@@ -1232,13 +1234,14 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.AutoSize = true;
             this.groupBox5.Controls.Add(label29);
             this.groupBox5.Controls.Add(label30);
             this.groupBox5.Controls.Add(this.treatment);
             this.groupBox5.Controls.Add(this.diagnosis);
-            this.groupBox5.Location = new System.Drawing.Point(12, 556);
+            this.groupBox5.Location = new System.Drawing.Point(19, 556);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(429, 101);
+            this.groupBox5.Size = new System.Drawing.Size(443, 109);
             this.groupBox5.TabIndex = 24;
             this.groupBox5.TabStop = false;
             // 
@@ -1246,24 +1249,25 @@
             // 
             this.treatment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.treatment.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treatment.Location = new System.Drawing.Point(143, 55);
+            this.treatment.Location = new System.Drawing.Point(147, 55);
             this.treatment.MaxLength = 500;
             this.treatment.Name = "treatment";
-            this.treatment.Size = new System.Drawing.Size(274, 30);
+            this.treatment.Size = new System.Drawing.Size(270, 30);
             this.treatment.TabIndex = 18;
             // 
             // diagnosis
             // 
             this.diagnosis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diagnosis.Location = new System.Drawing.Point(143, 19);
+            this.diagnosis.Location = new System.Drawing.Point(147, 19);
             this.diagnosis.MaxLength = 500;
             this.diagnosis.Name = "diagnosis";
-            this.diagnosis.Size = new System.Drawing.Size(274, 30);
+            this.diagnosis.Size = new System.Drawing.Size(270, 30);
             this.diagnosis.TabIndex = 17;
             // 
             // groupBox6
             // 
+            this.groupBox6.AutoSize = true;
             this.groupBox6.Controls.Add(label2);
             this.groupBox6.Controls.Add(this.colonoscopy);
             this.groupBox6.Controls.Add(label3);
@@ -1277,9 +1281,9 @@
             this.groupBox6.Controls.Add(this.bloot_test);
             this.groupBox6.Controls.Add(label33);
             this.groupBox6.Controls.Add(this.imaging);
-            this.groupBox6.Location = new System.Drawing.Point(11, 657);
+            this.groupBox6.Location = new System.Drawing.Point(19, 665);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1007, 166);
+            this.groupBox6.Size = new System.Drawing.Size(1020, 166);
             this.groupBox6.TabIndex = 25;
             this.groupBox6.TabStop = false;
             // 
@@ -1345,6 +1349,7 @@
             // 
             // outpatientrecord
             // 
+            this.outpatientrecord.AutoSize = true;
             this.outpatientrecord.Controls.Add(label37);
             this.outpatientrecord.Controls.Add(this.state);
             this.outpatientrecord.Controls.Add(label38);
@@ -1358,9 +1363,9 @@
             this.outpatientrecord.Controls.Add(label42);
             this.outpatientrecord.Controls.Add(label22);
             this.outpatientrecord.Controls.Add(this.hospital_address);
-            this.outpatientrecord.Location = new System.Drawing.Point(11, 822);
+            this.outpatientrecord.Location = new System.Drawing.Point(19, 831);
             this.outpatientrecord.Name = "outpatientrecord";
-            this.outpatientrecord.Size = new System.Drawing.Size(1007, 170);
+            this.outpatientrecord.Size = new System.Drawing.Size(1020, 170);
             this.outpatientrecord.TabIndex = 26;
             this.outpatientrecord.TabStop = false;
             this.outpatientrecord.Visible = false;
@@ -1444,7 +1449,7 @@
             this.city.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.city.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.city.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.city.Location = new System.Drawing.Point(394, 107);
+            this.city.Location = new System.Drawing.Point(398, 107);
             this.city.MaxLength = 50;
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(134, 30);
@@ -1454,10 +1459,10 @@
             // 
             this.district.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.district.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.district.Location = new System.Drawing.Point(172, 107);
+            this.district.Location = new System.Drawing.Point(178, 107);
             this.district.MaxLength = 50;
             this.district.Name = "district";
-            this.district.Size = new System.Drawing.Size(142, 30);
+            this.district.Size = new System.Drawing.Size(136, 30);
             this.district.TabIndex = 76;
             // 
             // pin
@@ -1475,10 +1480,10 @@
             // 
             this.hospital_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hospital_name.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hospital_name.Location = new System.Drawing.Point(172, 67);
+            this.hospital_name.Location = new System.Drawing.Point(178, 67);
             this.hospital_name.MaxLength = 100;
             this.hospital_name.Name = "hospital_name";
-            this.hospital_name.Size = new System.Drawing.Size(270, 30);
+            this.hospital_name.Size = new System.Drawing.Size(264, 30);
             this.hospital_name.TabIndex = 75;
             // 
             // hospital_address
@@ -1514,7 +1519,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1106, 1095);
+            this.ClientSize = new System.Drawing.Size(1106, 740);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1527,6 +1532,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -1538,6 +1544,7 @@
             this.outpatientrecord.ResumeLayout(false);
             this.outpatientrecord.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

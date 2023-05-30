@@ -49,7 +49,6 @@
             System.Windows.Forms.Label label14;
             System.Windows.Forms.Label label12;
             System.Windows.Forms.Label label13;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(discharge));
             System.Windows.Forms.Label label37;
             System.Windows.Forms.Label label38;
             System.Windows.Forms.Label label39;
@@ -57,10 +56,12 @@
             System.Windows.Forms.Label label41;
             System.Windows.Forms.Label label42;
             System.Windows.Forms.Label label22;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(discharge));
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.search = new System.Windows.Forms.Button();
             this.date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.mrd = new System.Windows.Forms.TextBox();
@@ -85,14 +86,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.postmed = new System.Windows.Forms.TextBox();
             this.premed = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.print = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.save_ot = new System.Windows.Forms.Button();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.search = new System.Windows.Forms.Button();
             this.outpatientrecord = new System.Windows.Forms.GroupBox();
             this.state = new System.Windows.Forms.TextBox();
             this.city = new System.Windows.Forms.TextBox();
@@ -100,6 +93,13 @@
             this.pin = new System.Windows.Forms.TextBox();
             this.hospital_name = new System.Windows.Forms.TextBox();
             this.hospital_address = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.print = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.save_ot = new System.Windows.Forms.Button();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             label5 = new System.Windows.Forms.Label();
             mrdLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
@@ -135,15 +135,15 @@
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.outpatientrecord.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label5.Location = new System.Drawing.Point(742, 134);
+            label5.Location = new System.Drawing.Point(745, 134);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(46, 23);
             label5.TabIndex = 19;
@@ -153,7 +153,7 @@
             // 
             mrdLabel.AutoSize = true;
             mrdLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mrdLabel.Location = new System.Drawing.Point(742, 99);
+            mrdLabel.Location = new System.Drawing.Point(745, 99);
             mrdLabel.Name = "mrdLabel";
             mrdLabel.Size = new System.Drawing.Size(47, 23);
             mrdLabel.TabIndex = 15;
@@ -313,7 +313,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label11.Location = new System.Drawing.Point(756, 374);
+            label11.Location = new System.Drawing.Point(771, 374);
             label11.Name = "label11";
             label11.Size = new System.Drawing.Size(45, 23);
             label11.TabIndex = 62;
@@ -349,6 +349,76 @@
             label13.TabIndex = 65;
             label13.Text = "Post Discharge Medication";
             // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label37.Location = new System.Drawing.Point(767, 98);
+            label37.Name = "label37";
+            label37.Size = new System.Drawing.Size(48, 23);
+            label37.TabIndex = 86;
+            label37.Text = "State";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label38.Location = new System.Drawing.Point(342, 98);
+            label38.Name = "label38";
+            label38.Size = new System.Drawing.Size(39, 23);
+            label38.TabIndex = 85;
+            label38.Text = "City";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label39.Location = new System.Drawing.Point(558, 98);
+            label39.Name = "label39";
+            label39.Size = new System.Drawing.Size(34, 23);
+            label39.TabIndex = 82;
+            label39.Text = "Pin";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label40.Location = new System.Drawing.Point(42, 98);
+            label40.Name = "label40";
+            label40.Size = new System.Drawing.Size(63, 23);
+            label40.TabIndex = 81;
+            label40.Text = "District";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label41.Location = new System.Drawing.Point(464, 58);
+            label41.Name = "label41";
+            label41.Size = new System.Drawing.Size(70, 23);
+            label41.TabIndex = 80;
+            label41.Text = "Address";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label42.Location = new System.Drawing.Point(42, 58);
+            label42.Name = "label42";
+            label42.Size = new System.Drawing.Size(123, 23);
+            label42.TabIndex = 79;
+            label42.Text = "Hospital Name";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label22.Location = new System.Drawing.Point(423, 15);
+            label22.Name = "label22";
+            label22.Size = new System.Drawing.Size(123, 23);
+            label22.TabIndex = 74;
+            label22.Text = "Patient Record";
+            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -361,15 +431,15 @@
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.outpatientrecord);
-            this.panel2.Location = new System.Drawing.Point(22, 0);
+            this.panel2.Location = new System.Drawing.Point(-9, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1014, 934);
+            this.panel2.Size = new System.Drawing.Size(1069, 582);
             this.panel2.TabIndex = 25;
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.pictureBox1);
-            this.groupBox8.Location = new System.Drawing.Point(12, 2);
+            this.groupBox8.Location = new System.Drawing.Point(39, 2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(984, 107);
             this.groupBox8.TabIndex = 70;
@@ -388,7 +458,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(label5);
@@ -405,21 +474,34 @@
             this.groupBox1.Controls.Add(sexLabel);
             this.groupBox1.Controls.Add(addressLabel);
             this.groupBox1.Controls.Add(this.sex);
-            this.groupBox1.Location = new System.Drawing.Point(12, 112);
+            this.groupBox1.Location = new System.Drawing.Point(39, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(984, 186);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // search
+            // 
+            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.search.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.search.Image = global::sarthi.Properties.Resources.search1;
+            this.search.Location = new System.Drawing.Point(917, 95);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(33, 31);
+            this.search.TabIndex = 21;
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
             // date
             // 
             this.date.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(795, 138);
+            this.date.Location = new System.Drawing.Point(815, 138);
             this.date.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.date.MinDate = new System.DateTime(1999, 5, 19, 0, 0, 0, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(155, 25);
+            this.date.Size = new System.Drawing.Size(135, 25);
             this.date.TabIndex = 7;
             this.date.Value = new System.DateTime(2023, 3, 3, 12, 4, 42, 0);
             // 
@@ -437,10 +519,10 @@
             // 
             this.mrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mrd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrd.Location = new System.Drawing.Point(795, 96);
+            this.mrd.Location = new System.Drawing.Point(815, 96);
             this.mrd.MaxLength = 15;
             this.mrd.Name = "mrd";
-            this.mrd.Size = new System.Drawing.Size(116, 30);
+            this.mrd.Size = new System.Drawing.Size(96, 30);
             this.mrd.TabIndex = 4;
             this.mrd.TextChanged += new System.EventHandler(this.mrd_TextChanged);
             // 
@@ -504,14 +586,13 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox6.Controls.Add(this.dischargetime);
             this.groupBox6.Controls.Add(label3);
             this.groupBox6.Controls.Add(this.dateofadm);
             this.groupBox6.Controls.Add(this.dateofsurgery);
             this.groupBox6.Controls.Add(label2);
             this.groupBox6.Controls.Add(label33);
-            this.groupBox6.Location = new System.Drawing.Point(12, 297);
+            this.groupBox6.Location = new System.Drawing.Point(39, 297);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(984, 60);
             this.groupBox6.TabIndex = 25;
@@ -554,7 +635,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox3.Controls.Add(this.type);
             this.groupBox3.Controls.Add(this.primarydoctor);
             this.groupBox3.Controls.Add(label10);
@@ -570,7 +650,7 @@
             this.groupBox3.Controls.Add(label1);
             this.groupBox3.Controls.Add(this.diagnosis);
             this.groupBox3.Controls.Add(label34);
-            this.groupBox3.Location = new System.Drawing.Point(12, 356);
+            this.groupBox3.Location = new System.Drawing.Point(39, 356);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(984, 224);
             this.groupBox3.TabIndex = 69;
@@ -643,7 +723,7 @@
             this.room.Location = new System.Drawing.Point(599, 16);
             this.room.MaxLength = 200;
             this.room.Name = "room";
-            this.room.Size = new System.Drawing.Size(122, 30);
+            this.room.Size = new System.Drawing.Size(106, 30);
             this.room.TabIndex = 13;
             // 
             // treatment
@@ -671,13 +751,12 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.postmed);
             this.groupBox2.Controls.Add(label13);
             this.groupBox2.Controls.Add(this.premed);
             this.groupBox2.Controls.Add(label14);
             this.groupBox2.Controls.Add(label12);
-            this.groupBox2.Location = new System.Drawing.Point(12, 576);
+            this.groupBox2.Location = new System.Drawing.Point(39, 576);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(984, 155);
             this.groupBox2.TabIndex = 53;
@@ -705,105 +784,6 @@
             this.premed.Size = new System.Drawing.Size(410, 62);
             this.premed.TabIndex = 19;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.print);
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.save_ot);
-            this.groupBox4.Location = new System.Drawing.Point(-9, 940);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1081, 109);
-            this.groupBox4.TabIndex = 26;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // print
-            // 
-            this.print.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.print.BackColor = System.Drawing.Color.LimeGreen;
-            this.print.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.print.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print.ForeColor = System.Drawing.Color.White;
-            this.print.Image = global::sarthi.Properties.Resources.printer;
-            this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.print.Location = new System.Drawing.Point(478, 18);
-            this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(114, 37);
-            this.print.TabIndex = 22;
-            this.print.Text = "  Print";
-            this.print.UseVisualStyleBackColor = false;
-            this.print.Click += new System.EventHandler(this.print_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(317, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 37);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "     Refresh";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // save_ot
-            // 
-            this.save_ot.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.save_ot.BackColor = System.Drawing.Color.RoyalBlue;
-            this.save_ot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_ot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save_ot.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save_ot.ForeColor = System.Drawing.Color.White;
-            this.save_ot.Image = global::sarthi.Properties.Resources.save;
-            this.save_ot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_ot.Location = new System.Drawing.Point(642, 18);
-            this.save_ot.Name = "save_ot";
-            this.save_ot.Size = new System.Drawing.Size(114, 37);
-            this.save_ot.TabIndex = 23;
-            this.save_ot.Text = "  Save";
-            this.save_ot.UseVisualStyleBackColor = false;
-            this.save_ot.Click += new System.EventHandler(this.save_ot_Click);
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            // 
-            // search
-            // 
-            this.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.search.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.search.Image = global::sarthi.Properties.Resources.search1;
-            this.search.Location = new System.Drawing.Point(917, 95);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(33, 31);
-            this.search.TabIndex = 21;
-            this.search.UseVisualStyleBackColor = true;
-            this.search.Click += new System.EventHandler(this.search_Click);
-            // 
             // outpatientrecord
             // 
             this.outpatientrecord.Controls.Add(label37);
@@ -819,21 +799,11 @@
             this.outpatientrecord.Controls.Add(label42);
             this.outpatientrecord.Controls.Add(label22);
             this.outpatientrecord.Controls.Add(this.hospital_address);
-            this.outpatientrecord.Location = new System.Drawing.Point(12, 727);
+            this.outpatientrecord.Location = new System.Drawing.Point(39, 727);
             this.outpatientrecord.Name = "outpatientrecord";
             this.outpatientrecord.Size = new System.Drawing.Size(984, 147);
             this.outpatientrecord.TabIndex = 71;
             this.outpatientrecord.TabStop = false;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label37.Location = new System.Drawing.Point(767, 98);
-            label37.Name = "label37";
-            label37.Size = new System.Drawing.Size(48, 23);
-            label37.TabIndex = 86;
-            label37.Text = "State";
             // 
             // state
             // 
@@ -876,16 +846,6 @@
             this.state.Size = new System.Drawing.Size(132, 30);
             this.state.TabIndex = 84;
             // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label38.Location = new System.Drawing.Point(342, 98);
-            label38.Name = "label38";
-            label38.Size = new System.Drawing.Size(39, 23);
-            label38.TabIndex = 85;
-            label38.Text = "City";
-            // 
             // city
             // 
             this.city.AutoCompleteCustomSource.AddRange(new string[] {
@@ -924,21 +884,11 @@
             this.city.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.city.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.city.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.city.Location = new System.Drawing.Point(394, 96);
+            this.city.Location = new System.Drawing.Point(408, 96);
             this.city.MaxLength = 50;
             this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(134, 30);
+            this.city.Size = new System.Drawing.Size(120, 30);
             this.city.TabIndex = 83;
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label39.Location = new System.Drawing.Point(558, 98);
-            label39.Name = "label39";
-            label39.Size = new System.Drawing.Size(34, 23);
-            label39.TabIndex = 82;
-            label39.Text = "Pin";
             // 
             // district
             // 
@@ -950,16 +900,6 @@
             this.district.Size = new System.Drawing.Size(142, 30);
             this.district.TabIndex = 76;
             // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label40.Location = new System.Drawing.Point(42, 98);
-            label40.Name = "label40";
-            label40.Size = new System.Drawing.Size(63, 23);
-            label40.TabIndex = 81;
-            label40.Text = "District";
-            // 
             // pin
             // 
             this.pin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -969,16 +909,6 @@
             this.pin.Name = "pin";
             this.pin.Size = new System.Drawing.Size(116, 30);
             this.pin.TabIndex = 78;
-            // 
-            // label41
-            // 
-            label41.AutoSize = true;
-            label41.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label41.Location = new System.Drawing.Point(464, 58);
-            label41.Name = "label41";
-            label41.Size = new System.Drawing.Size(70, 23);
-            label41.TabIndex = 80;
-            label41.Text = "Address";
             // 
             // hospital_name
             // 
@@ -990,26 +920,6 @@
             this.hospital_name.Size = new System.Drawing.Size(270, 30);
             this.hospital_name.TabIndex = 75;
             // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label42.Location = new System.Drawing.Point(42, 58);
-            label42.Name = "label42";
-            label42.Size = new System.Drawing.Size(123, 23);
-            label42.TabIndex = 79;
-            label42.Text = "Hospital Name";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label22.Location = new System.Drawing.Point(423, 15);
-            label22.Name = "label22";
-            label22.Size = new System.Drawing.Size(123, 23);
-            label22.TabIndex = 74;
-            label22.Text = "Patient Record";
-            // 
             // hospital_address
             // 
             this.hospital_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1020,12 +930,98 @@
             this.hospital_address.Size = new System.Drawing.Size(405, 30);
             this.hospital_address.TabIndex = 77;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.print);
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.save_ot);
+            this.groupBox4.Location = new System.Drawing.Point(-9, 642);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1081, 109);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // print
+            // 
+            this.print.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.print.BackColor = System.Drawing.Color.LimeGreen;
+            this.print.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.print.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print.ForeColor = System.Drawing.Color.White;
+            this.print.Image = global::sarthi.Properties.Resources.printer;
+            this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.print.Location = new System.Drawing.Point(471, 18);
+            this.print.Name = "print";
+            this.print.Size = new System.Drawing.Size(141, 37);
+            this.print.TabIndex = 22;
+            this.print.Text = "  Print";
+            this.print.UseVisualStyleBackColor = false;
+            this.print.Click += new System.EventHandler(this.print_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::sarthi.Properties.Resources.refresh__3_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(307, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 37);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "     Refresh";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // save_ot
+            // 
+            this.save_ot.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.save_ot.BackColor = System.Drawing.Color.RoyalBlue;
+            this.save_ot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save_ot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.save_ot.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_ot.ForeColor = System.Drawing.Color.White;
+            this.save_ot.Image = global::sarthi.Properties.Resources.save;
+            this.save_ot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.save_ot.Location = new System.Drawing.Point(632, 18);
+            this.save_ot.Name = "save_ot";
+            this.save_ot.Size = new System.Drawing.Size(141, 37);
+            this.save_ot.TabIndex = 23;
+            this.save_ot.Text = "  Save";
+            this.save_ot.UseVisualStyleBackColor = false;
+            this.save_ot.Click += new System.EventHandler(this.save_ot_Click);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // discharge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1059, 1006);
+            this.ClientSize = new System.Drawing.Size(1059, 708);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1045,9 +1041,9 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
             this.outpatientrecord.ResumeLayout(false);
             this.outpatientrecord.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

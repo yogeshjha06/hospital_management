@@ -175,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sarthi.exe" size="2434536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sarthi.exe" size="2504680">
       <assemblyIdentity name="sarthi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vbUTUZos4DqpUzIFD6v8rVFVHFoiGEd1ypC0a4bE83Y=</dsig:DigestValue>
+        <dsig:DigestValue>x0mDJOkysXmWOj4DEf/Qmu0zKjww9rDuaNrB108OAY8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

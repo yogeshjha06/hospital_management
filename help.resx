@@ -125,25 +125,12 @@ efficient solution for healthcare providers.</value>
   <data name="label18.Text" xml:space="preserve">
     <value>1. Navigation: Familiarize yourself with the application's 
 navigation and menu structure to easily access different 
-sections and functionalities. Use the main menu or 
-sidebar to navigate through the system.
+sections and functionalities.
 
 2. Patient Search: Use the search functionality to quickly 
-locate a specific patient's record. Enter relevant details 
-such as the patient's name, unique identification number, 
-or date of birth to narrow down the search results.
+locate a specific patient's record. 
 
 3. Data Entry: Ensure accurate and complete data entry 
-when creating or updating patient records. Double-
-check the information entered, including demographics, 
-medical history, and treatment details, to maintain data 
-integrity.
-
-4. Privacy and Security: Adhere to privacy and security best 
-practices when handling patient data. Regularly change 
-your password, avoid sharing login credentials, and log out 
-of the system when not in use. Report any suspicious 
-activities or breaches to the system administrator.
-</value>
+when creating or updating patient records. </value>
   </data>
 </root>
